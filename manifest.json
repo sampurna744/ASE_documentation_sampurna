@@ -1,0 +1,438 @@
+{
+  "source_base_path": "C:/Users/soyald/Downloads/Sam",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.ClearCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.ClearCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.ClearCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.ClearCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.ClearCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures the command validates parameters correctly and triggers\na canvas clear operation when executed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.DrawToCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.DrawToCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.DrawToCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.DrawToCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the WinFormsApp1.DrawToCommand class.\nEnsures parameters are parsed, validated, compiled, and executed correctly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.MockCanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.MockCanvas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.MockCanvas",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.MockCanvas.yml\" sourcestartlinenumber=\"1\">A mock implementation of <xref href=\"BOOSE.ICanvas\" data-throw-if-not-resolved=\"false\"></xref> used for unit testing.\nIt records method calls, argument values, and internal drawing state\nwithout performing any real graphical operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.MoveToCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.MoveToCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.MoveToCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.MoveToCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.MoveToCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nVerifies correct parameter parsing, error handling,\nand that the canvas cursor is moved to the correct coordinates.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.MultilineProgramTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.MultilineProgramTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.MultilineProgramTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.MultilineProgramTest.yml\" sourcestartlinenumber=\"1\">Provides unit tests for executing multiline BOOSE programs.\nVerifies drawing commands, colour changes, pen commands,\nand conditional or sequential execution using MockCanvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.PenCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.PenCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.PenCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.PenCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.PenCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures RGB parsing, validation, and canvas interaction behave correctly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.RectangleCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.RectangleCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.RectangleCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.RectangleCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.rectangleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nVerifies rectangle drawing, fill handling, error validation, and parameter parsing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.ResetCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.ResetCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.ResetCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.ResetCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.resetCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures correct validation, compilation behavior, and execution effects\non both the stored program and the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.TriangleCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.TriangleCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.TriangleCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.TriangleCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.TriangleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures correct validation, compilation and execution behaviour.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.WriteCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.WriteCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.WriteCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.WriteCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the WinFormsApp1.WriteCommand class.\nEnsures messages are parsed, validated, cleaned, and executed correctly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.cricleCommandtest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.cricleCommandtest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.cricleCommandtest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.cricleCommandtest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.circleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures proper parameter validation and correct execution behavior.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.AppCommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.AppCommandFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.AppCommandFactory",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Factory class responsible for creating application-specific BOOSE commands.\nExtends the <xref href=\"BOOSE.CommandFactory\" data-throw-if-not-resolved=\"false\"></xref> to support custom drawing commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.ClearCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.ClearCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.ClearCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.ClearCommand.yml\" sourcestartlinenumber=\"1\">Command that clears the canvas to its default background color.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.DrawToCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.DrawToCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.DrawToCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.DrawToCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>drawto</code> command.\nDraws a line from the current canvas position to a new (x, y) coordinate.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.Form1",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.Form1.yml\" sourcestartlinenumber=\"1\">Main form of the BOOSE drawing application.\nHandles execution of commands, program parsing, debugging output,\nfile operations, and drawing through the ICanvas implementation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.MoveToCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.MoveToCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.MoveToCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.MoveToCommand.yml\" sourcestartlinenumber=\"1\">Represents the BOOSE <code>moveto</code> command.\nMoves the canvas cursor to a specified (x, y) position without drawing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.PenCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.PenCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.PenCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.PenCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that changes the pen colour on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.TriangleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.TriangleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.TriangleCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.TriangleCommand.yml\" sourcestartlinenumber=\"1\">Represents the BOOSE command &quot;triangle&quot;, used to draw a triangle on the canvas.\nSyntax: triangle &lt;width&gt; &lt;height&gt;</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.WriteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.WriteCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.WriteCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.WriteCommand.yml\" sourcestartlinenumber=\"1\">Represents the <code>write</code> command in the BOOSE language.\nThis command displays text at the canvas's current pen position.\nSupports both quoted and unquoted messages.</p>\n<p>Examples:</p>\n<pre><code class=\"lang-csharp\">write \"Hello World\"\nwrite 'Test Message'\nwrite Hello</code></pre>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.canvasApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.canvasApp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.canvasApp",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.canvasApp.yml\" sourcestartlinenumber=\"1\">Canvas implementation used by BOOSE commands to draw shapes,\nlines, text, and manage pen state inside a bitmap.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.circleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.circleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.circleCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.circleCommand.yml\" sourcestartlinenumber=\"1\">Represents the BOOSE command &quot;circle&quot;, used to draw a circle on the canvas.\nSupports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.rectangleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.rectangleCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.rectangleCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.rectangleCommand.yml\" sourcestartlinenumber=\"1\">Implements the RECT command used to draw rectangles on the canvas.\nSupports optional fill parameter (true/false).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.resetCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.resetCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.resetCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.resetCommand.yml\" sourcestartlinenumber=\"1\">Represents the RESET command.\nClears the stored program and resets the drawing canvas.\nSyntax: <code>reset</code></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

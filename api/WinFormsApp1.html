@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace WinFormsApp1 | BOOSE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace WinFormsApp1 | BOOSE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE Documentation">
+            BOOSE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="WinFormsApp1">
+
+  <h1 id="WinFormsApp1" data-uid="WinFormsApp1" class="text-break">Namespace WinFormsApp1</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.AppCommandFactory.html">AppCommandFactory</a></dt>
+      <dd><p>Factory class responsible for creating application-specific BOOSE commands.
+Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom drawing commands.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.ClearCommand.html">ClearCommand</a></dt>
+      <dd><p>Command that clears the canvas to its default background color.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.DrawToCommand.html">DrawToCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>drawto</code> command.
+Draws a line from the current canvas position to a new (x, y) coordinate.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.Form1.html">Form1</a></dt>
+      <dd><p>Main form of the BOOSE drawing application.
+Handles execution of commands, program parsing, debugging output,
+file operations, and drawing through the ICanvas implementation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a></dt>
+      <dd><p>Represents the BOOSE <code>moveto</code> command.
+Moves the canvas cursor to a specified (x, y) position without drawing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a></dt>
+      <dd><p>Represents a command that changes the pen colour on the canvas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.TriangleCommand.html">TriangleCommand</a></dt>
+      <dd><p>Represents the BOOSE command &quot;triangle&quot;, used to draw a triangle on the canvas.
+Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.WriteCommand.html">WriteCommand</a></dt>
+      <dd><p>Represents the <code>write</code> command in the BOOSE language.
+This command displays text at the canvas's current pen position.
+Supports both quoted and unquoted messages.</p>
+<p>Examples:</p>
+<pre><code class="lang-csharp">write "Hello World"
+write 'Test Message'
+write Hello</code></pre>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.canvasApp.html">canvasApp</a></dt>
+      <dd><p>Canvas implementation used by BOOSE commands to draw shapes,
+lines, text, and manage pen state inside a bitmap.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.circleCommand.html">circleCommand</a></dt>
+      <dd><p>Represents the BOOSE command &quot;circle&quot;, used to draw a circle on the canvas.
+Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.rectangleCommand.html">rectangleCommand</a></dt>
+      <dd><p>Implements the RECT command used to draw rectangles on the canvas.
+Supports optional fill parameter (true/false).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.resetCommand.html">resetCommand</a></dt>
+      <dd><p>Represents the RESET command.
+Clears the stored program and resets the drawing canvas.
+Syntax: <code>reset</code></p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
