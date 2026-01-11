@@ -12,6 +12,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.AppCommandFactoryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.AppCommandFactoryTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.AppCommandFactoryTests",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.AppCommandFactoryTests.yml\" sourcestartlinenumber=\"1\">Unit tests for <xref href=\"WinFormsApp1.AppCommandFactory\" data-throw-if-not-resolved=\"false\"></xref> using MSTest.\nThese tests verify that the factory:</p>\n<ul><li>Creates the correct command types for known keywords</li><li>Is case-insensitive and trims input</li><li>Injects the shared <xref href=\"BOOSE.ICanvas\" data-throw-if-not-resolved=\"false\"></xref> into drawing commands (verified by execution on <xref href=\"TestProjectSampurna.MockCanvas\" data-throw-if-not-resolved=\"false\"></xref>)</li></ul>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TestProjectSampurna.CircleCommandTest.yml",
       "output": {
         ".html": {

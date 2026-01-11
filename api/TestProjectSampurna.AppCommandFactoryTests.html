@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppCommandFactoryTests | BOOSE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppCommandFactoryTests | BOOSE Documentation ">
+      
+      <meta name="description" content="Unit tests for  using MSTest. These tests verify that the factory: Creates the correct command types for known keywordsIs case-insensitive and trims inputInjects the shared  into drawing commands (verified by execution on )">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/new/main/apiSpec/new?filename=TestProjectSampurna_AppCommandFactoryTests.md&amp;value=---%0Auid%3A%20TestProjectSampurna.AppCommandFactoryTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE Documentation">
+            BOOSE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TestProjectSampurna.AppCommandFactoryTests">
+
+
+
+  <h1 id="TestProjectSampurna_AppCommandFactoryTests" data-uid="TestProjectSampurna.AppCommandFactoryTests" class="text-break">
+Class AppCommandFactoryTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TestProjectSampurna.html">TestProjectSampurna</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for <a class="xref" href="WinFormsApp1.AppCommandFactory.html">AppCommandFactory</a> using MSTest.
+These tests verify that the factory:</p>
+<ul><li>Creates the correct command types for known keywords</li><li>Is case-insensitive and trims input</li><li>Injects the shared <span class="xref">BOOSE.ICanvas</span> into drawing commands (verified by execution on <a class="xref" href="TestProjectSampurna.MockCanvas.html">MockCanvas</a>)</li></ul>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class AppCommandFactoryTests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AppCommandFactoryTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_Circle_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.Circle_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_Circle_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.Circle_UsesInjectedCanvas_WhenExecuted">
+  Circle_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>circle</code> command calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Circle(int, bool)</a>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Circle_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_Clear_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.Clear_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_Clear_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.Clear_UsesInjectedCanvas_WhenExecuted">
+  Clear_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>clear</code> command calls <span class="xref">BOOSE.ICanvas.Clear()</span>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Clear_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_DrawTo_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.DrawTo_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_DrawTo_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.DrawTo_UsesInjectedCanvas_WhenExecuted">
+  DrawTo_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>drawto</code> command calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">DrawTo(int, int)</a>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Array_ReturnsArrayCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Array_ReturnsArrayCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Array_ReturnsArrayCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Array_ReturnsArrayCommand">
+  MakeCommand_Array_ReturnsArrayCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>array</code> keyword returns an <a class="xref" href="WinFormsApp1.ArrayCommand.html">ArrayCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Array_ReturnsArrayCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Assign_ReturnsAssignCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Assign_ReturnsAssignCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Assign_ReturnsAssignCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Assign_ReturnsAssignCommand">
+  MakeCommand_Assign_ReturnsAssignCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>assign</code> keyword returns an <a class="xref" href="WinFormsApp1.AssignCommand.html">AssignCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Assign_ReturnsAssignCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Bool_ReturnsBooleanCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Bool_ReturnsBooleanCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Bool_ReturnsBooleanCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Bool_ReturnsBooleanCommand">
+  MakeCommand_Bool_ReturnsBooleanCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <code>bool</code> returns a <a class="xref" href="WinFormsApp1.BooleanCommand.html">BooleanCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Bool_ReturnsBooleanCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Boolean_ReturnsBooleanCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Boolean_ReturnsBooleanCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Boolean_ReturnsBooleanCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Boolean_ReturnsBooleanCommand">
+  MakeCommand_Boolean_ReturnsBooleanCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that <code>boolean</code> returns a <a class="xref" href="WinFormsApp1.BooleanCommand.html">BooleanCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Boolean_ReturnsBooleanCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Call_ReturnsCallCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Call_ReturnsCallCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Call_ReturnsCallCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Call_ReturnsCallCommand">
+  MakeCommand_Call_ReturnsCallCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>call</code> keyword returns a <a class="xref" href="WinFormsApp1.CallCommand.html">CallCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Call_ReturnsCallCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Circle_ReturnsCircleCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Circle_ReturnsCircleCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Circle_ReturnsCircleCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Circle_ReturnsCircleCommand">
+  MakeCommand_Circle_ReturnsCircleCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>circle</code> keyword returns a <a class="xref" href="WinFormsApp1.circleCommand.html">CircleCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Circle_ReturnsCircleCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Clear_ReturnsClearCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Clear_ReturnsClearCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Clear_ReturnsClearCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Clear_ReturnsClearCommand">
+  MakeCommand_Clear_ReturnsClearCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>clear</code> keyword returns a <a class="xref" href="WinFormsApp1.ClearCommand.html">ClearCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Clear_ReturnsClearCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_DrawTo_ReturnsDrawToCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_DrawTo_ReturnsDrawToCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_DrawTo_ReturnsDrawToCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_DrawTo_ReturnsDrawToCommand">
+  MakeCommand_DrawTo_ReturnsDrawToCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>drawto</code> keyword returns a <a class="xref" href="WinFormsApp1.DrawToCommand.html">DrawToCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_DrawTo_ReturnsDrawToCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Else_ReturnsElseCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Else_ReturnsElseCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Else_ReturnsElseCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Else_ReturnsElseCommand">
+  MakeCommand_Else_ReturnsElseCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>else</code> keyword returns an <a class="xref" href="WinFormsApp1.ElseCommand.html">ElseCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Else_ReturnsElseCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Empty_Throws_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Empty_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Empty_Throws" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Empty_Throws">
+  MakeCommand_Empty_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that an empty command name causes <span class="xref">BOOSE.CommandException</span> to be thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Empty_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndFor_ReturnsEndForCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndFor_ReturnsEndForCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndFor_ReturnsEndForCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndFor_ReturnsEndForCommand">
+  MakeCommand_EndFor_ReturnsEndForCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>endfor</code> keyword returns an <a class="xref" href="WinFormsApp1.EndForCommand.html">EndForCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_EndFor_ReturnsEndForCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndIf_ReturnsEndIfCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndIf_ReturnsEndIfCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndIf_ReturnsEndIfCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndIf_ReturnsEndIfCommand">
+  MakeCommand_EndIf_ReturnsEndIfCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>endif</code> keyword returns an <a class="xref" href="WinFormsApp1.EndIfCommand.html">EndIfCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_EndIf_ReturnsEndIfCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndMethod_ReturnsEndMethodCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndMethod_ReturnsEndMethodCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndMethod_ReturnsEndMethodCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndMethod_ReturnsEndMethodCommand">
+  MakeCommand_EndMethod_ReturnsEndMethodCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>endmethod</code> keyword returns an <a class="xref" href="WinFormsApp1.EndMethodCommand.html">EndMethodCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_EndMethod_ReturnsEndMethodCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndWhile_ReturnsEndWhileCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndWhile_ReturnsEndWhileCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_EndWhile_ReturnsEndWhileCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_EndWhile_ReturnsEndWhileCommand">
+  MakeCommand_EndWhile_ReturnsEndWhileCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>endwhile</code> keyword returns an <a class="xref" href="WinFormsApp1.EndWhileCommand.html">EndWhileCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_EndWhile_ReturnsEndWhileCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_For_ReturnsForCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_For_ReturnsForCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_For_ReturnsForCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_For_ReturnsForCommand">
+  MakeCommand_For_ReturnsForCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>for</code> keyword returns a <a class="xref" href="WinFormsApp1.ForCommand.html">ForCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_For_ReturnsForCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_If_ReturnsIfCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_If_ReturnsIfCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_If_ReturnsIfCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_If_ReturnsIfCommand">
+  MakeCommand_If_ReturnsIfCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>if</code> keyword returns an <a class="xref" href="WinFormsApp1.IfCommand.html">IfCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_If_ReturnsIfCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Int_ReturnsIntCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Int_ReturnsIntCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Int_ReturnsIntCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Int_ReturnsIntCommand">
+  MakeCommand_Int_ReturnsIntCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>int</code> keyword returns an <a class="xref" href="WinFormsApp1.IntCommand.html">IntCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Int_ReturnsIntCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_IsCaseInsensitive_AndTrims_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_IsCaseInsensitive_AndTrims*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_IsCaseInsensitive_AndTrims" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_IsCaseInsensitive_AndTrims">
+  MakeCommand_IsCaseInsensitive_AndTrims()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that command names are treated as case-insensitive and whitespace is trimmed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_IsCaseInsensitive_AndTrims()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Method_ReturnsMethodCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Method_ReturnsMethodCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Method_ReturnsMethodCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Method_ReturnsMethodCommand">
+  MakeCommand_Method_ReturnsMethodCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>method</code> keyword returns a <a class="xref" href="WinFormsApp1.MethodCommand.html">MethodCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Method_ReturnsMethodCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_MoveTo_ReturnsMoveToCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_MoveTo_ReturnsMoveToCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_MoveTo_ReturnsMoveToCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_MoveTo_ReturnsMoveToCommand">
+  MakeCommand_MoveTo_ReturnsMoveToCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>moveto</code> keyword returns a <a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_MoveTo_ReturnsMoveToCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Null_Throws_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Null_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Null_Throws" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Null_Throws">
+  MakeCommand_Null_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that a null command name causes <span class="xref">BOOSE.CommandException</span> to be thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Null_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Peek_ReturnsPeekCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Peek_ReturnsPeekCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Peek_ReturnsPeekCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Peek_ReturnsPeekCommand">
+  MakeCommand_Peek_ReturnsPeekCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>peek</code> keyword returns a <a class="xref" href="WinFormsApp1.PeekCommand.html">PeekCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Peek_ReturnsPeekCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Pen_ReturnsPenCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Pen_ReturnsPenCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Pen_ReturnsPenCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Pen_ReturnsPenCommand">
+  MakeCommand_Pen_ReturnsPenCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>pen</code> keyword returns a <a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Pen_ReturnsPenCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Poke_ReturnsPokeCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Poke_ReturnsPokeCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Poke_ReturnsPokeCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Poke_ReturnsPokeCommand">
+  MakeCommand_Poke_ReturnsPokeCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>poke</code> keyword returns a <a class="xref" href="WinFormsApp1.PokeCommand.html">PokeCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Poke_ReturnsPokeCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Real_ReturnsRealCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Real_ReturnsRealCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Real_ReturnsRealCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Real_ReturnsRealCommand">
+  MakeCommand_Real_ReturnsRealCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>real</code> keyword returns a <a class="xref" href="WinFormsApp1.RealCommand.html">RealCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Real_ReturnsRealCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Rect_ReturnsRectangleCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Rect_ReturnsRectangleCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Rect_ReturnsRectangleCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Rect_ReturnsRectangleCommand">
+  MakeCommand_Rect_ReturnsRectangleCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>rect</code> keyword returns a <a class="xref" href="WinFormsApp1.rectangleCommand.html">RectangleCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Rect_ReturnsRectangleCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Reset_ReturnsResetCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Reset_ReturnsResetCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Reset_ReturnsResetCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Reset_ReturnsResetCommand">
+  MakeCommand_Reset_ReturnsResetCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>reset</code> keyword returns a <a class="xref" href="WinFormsApp1.resetCommand.html">resetCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Reset_ReturnsResetCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Text_ReturnsWriteCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Text_ReturnsWriteCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Text_ReturnsWriteCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Text_ReturnsWriteCommand">
+  MakeCommand_Text_ReturnsWriteCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>text</code> keyword returns a <a class="xref" href="WinFormsApp1.WriteCommand.html">WriteCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Text_ReturnsWriteCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Tri_ReturnsTriangleCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Tri_ReturnsTriangleCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Tri_ReturnsTriangleCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Tri_ReturnsTriangleCommand">
+  MakeCommand_Tri_ReturnsTriangleCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>tri</code> keyword returns a <a class="xref" href="WinFormsApp1.TriangleCommand.html">TriangleCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Tri_ReturnsTriangleCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_While_ReturnsWhileCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_While_ReturnsWhileCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_While_ReturnsWhileCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_While_ReturnsWhileCommand">
+  MakeCommand_While_ReturnsWhileCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>while</code> keyword returns a <a class="xref" href="WinFormsApp1.WhileCommand.html">WhileCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_While_ReturnsWhileCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Whitespace_Throws_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Whitespace_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Whitespace_Throws" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Whitespace_Throws">
+  MakeCommand_Whitespace_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that a whitespace-only command name causes <span class="xref">BOOSE.CommandException</span> to be thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Whitespace_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Write_ReturnsWriteCommand_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Write_ReturnsWriteCommand*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MakeCommand_Write_ReturnsWriteCommand" data-uid="TestProjectSampurna.AppCommandFactoryTests.MakeCommand_Write_ReturnsWriteCommand">
+  MakeCommand_Write_ReturnsWriteCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the <code>write</code> keyword returns a <a class="xref" href="WinFormsApp1.WriteCommand.html">WriteCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MakeCommand_Write_ReturnsWriteCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_MoveTo_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.MoveTo_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_MoveTo_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.MoveTo_UsesInjectedCanvas_WhenExecuted">
+  MoveTo_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>moveto</code> command calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">MoveTo(int, int)</a>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_Pen_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.Pen_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_Pen_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.Pen_UsesInjectedCanvas_WhenExecuted">
+  Pen_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>pen</code> command calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">SetColour(int, int, int)</a>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Pen_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_Rect_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.Rect_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_Rect_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.Rect_UsesInjectedCanvas_WhenExecuted">
+  Rect_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>rect</code> command calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Rect(int, int, bool)</a>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Rect_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_Reset_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.Reset_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_Reset_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.Reset_UsesInjectedCanvas_WhenExecuted">
+  Reset_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>reset</code> command calls <span class="xref">BOOSE.ICanvas.Reset()</span>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Reset_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_TestInitialize_" data-uid="TestProjectSampurna.AppCommandFactoryTests.TestInitialize*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_TestInitialize" data-uid="TestProjectSampurna.AppCommandFactoryTests.TestInitialize">
+  TestInitialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a clean test environment before each test case.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void TestInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_AppCommandFactoryTests_Write_UsesInjectedCanvas_WhenExecuted_" data-uid="TestProjectSampurna.AppCommandFactoryTests.Write_UsesInjectedCanvas_WhenExecuted*"></a>
+
+  <h3 id="TestProjectSampurna_AppCommandFactoryTests_Write_UsesInjectedCanvas_WhenExecuted" data-uid="TestProjectSampurna.AppCommandFactoryTests.Write_UsesInjectedCanvas_WhenExecuted">
+  Write_UsesInjectedCanvas_WhenExecuted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Confirms that executing a <code>write</code> command calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">WriteText(string)</a>
+on the injected canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Write_UsesInjectedCanvas_WhenExecuted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/AppCommandFactoryTests.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
