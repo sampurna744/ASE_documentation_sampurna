@@ -2,21 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>This is the HOMEPAGE. | BOOSE Documentation </title>
+      <title>BOOSE Documentation | Sampurna Simkhada</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="This is the HOMEPAGE. | BOOSE Documentation ">
-      
-      
+      <meta name="title" content="BOOSE Documentation | Sampurna Simkhada">
+
       <link rel="icon" href="favicon.ico">
       <link rel="stylesheet" href="public/docfx.min.css">
       <link rel="stylesheet" href="public/main.css">
       <meta name="docfx:navrel" content="toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-      
       <meta name="docfx:rel" content="">
-      
-      
-      
+
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -34,8 +30,64 @@
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+        document.documentElement.setAttribute(
+          'data-bs-theme',
+          theme === 'auto'
+            ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+            : theme
+        )
       </script>
+
+      <style>
+        .hero-card {
+          border: 1px solid var(--bs-border-color);
+          border-radius: 12px;
+          padding: 1.25rem;
+          background: var(--bs-body-bg);
+          box-shadow: 0 1px 6px rgba(0,0,0,.04);
+          margin-bottom: 1.25rem;
+        }
+        .btn-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.75rem;
+          margin-top: 1rem;
+        }
+        .btn-cta {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.6rem 0.9rem;
+          border-radius: 10px;
+          text-decoration: none;
+          font-weight: 600;
+          border: 1px solid var(--bs-border-color);
+          background: var(--bs-body-bg);
+        }
+        .btn-cta:hover { filter: brightness(0.98); }
+        .tag {
+          display: inline-block;
+          padding: 0.15rem 0.5rem;
+          border-radius: 999px;
+          border: 1px solid var(--bs-border-color);
+          margin: 0.2rem 0.25rem 0 0;
+          font-size: 0.9rem;
+          background: rgba(0,0,0,.02);
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+        .grid .panel {
+          border: 1px solid var(--bs-border-color);
+          border-radius: 12px;
+          padding: 1rem;
+          background: var(--bs-body-bg);
+        }
+        .muted { color: var(--bs-secondary-color); }
+      </style>
 
   </head>
 
@@ -66,24 +118,102 @@
 
       <div class="content">
         <div class="actionbar">
-
           <nav id="breadcrumb"></nav>
         </div>
 
         <article data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
 
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
-<ol>
-<li>Add images to the <em>images</em> folder if the file is referencing an image.</li>
-</ol>
+          <div class="hero-card">
+            <h1 id="boose-documentation">BOOSE Documentation</h1>
+            <p class="muted">
+              Author: <strong>Sampurna Simkhada</strong>
+              <br>
+              Project: <strong>ASE BOOSE</strong> implementation (commands, control flow, methods, and variables).
+            </p>
 
-</article>
+            <div class="btn-row">
+              <!-- Commands project -->
+              <a class="btn-cta" href="api/WinFormsApp1.html">
+                📘 View Command Documentation
+              </a>
 
-        <div class="contribution d-print-none">
-        </div>
+              <!-- Test project -->
+              <a class="btn-cta" href="api/TestProjectSampurna.html">
+                ✅ View Test Documentation
+              </a>
+            </div>
+          </div>
 
+          <h2 id="overview">Overview</h2>
+          <p>
+            This documentation site covers my <strong>ASE BOOSE</strong> implementation, including drawing commands,
+            pen control, writing, flow control (if/while/for), methods, and variable handling.
+          </p>
+
+          <div class="grid">
+            <div class="panel">
+              <h3 id="drawing-commands">Drawing Commands</h3>
+              <p class="muted">Shape + movement commands supported in the BOOSE language:</p>
+              <span class="tag">circle</span>
+              <span class="tag">rectangle</span>
+              <span class="tag">triangle</span>
+              <span class="tag">moveto</span>
+              <span class="tag">drawto</span>
+            </div>
+
+            <div class="panel">
+              <h3 id="pen-and-output">Pen &amp; Output</h3>
+              <p class="muted">Visual styling + output:</p>
+              <span class="tag">pencolour</span>
+              <span class="tag">write</span>
+            </div>
+
+            <div class="panel">
+              <h3 id="control-flow">Control Flow</h3>
+              <p class="muted">Loops and conditions:</p>
+              <span class="tag">if</span>
+              <span class="tag">while</span>
+              <span class="tag">for</span>
+            </div>
+
+            <div class="panel">
+              <h3 id="methods">Methods</h3>
+              <p class="muted">Method definition and invocation support:</p>
+              <span class="tag">method</span>
+              <span class="tag">call</span>
+              <span class="tag">endmethod</span>
+            </div>
+
+            <div class="panel">
+              <h3 id="variables-and-types">Variables &amp; Types</h3>
+              <p class="muted">Supported variable types and operations:</p>
+              <span class="tag">int</span>
+              <span class="tag">bool</span>
+              <span class="tag">real</span>
+              <span class="tag">array</span>
+              <span class="tag">peek</span>
+              <span class="tag">poke</span>
+            </div>
+
+            <div class="panel">
+              <h3 id="what-to-read-first">What to read first</h3>
+              <ol>
+                <li><a href="api/WinFormsApp1.html">Command Documentation</a> (main implementation)</li>
+                <li><a href="api/TestProjectSampurna.html">Test Documentation</a> (unit tests)</li>
+                <li><a href="api/index.html">API Index</a> (all namespaces/classes)</li>
+              </ol>
+            </div>
+          </div>
+
+          <h2 id="notes">Notes</h2>
+          <ul>
+            <li>If search is enabled, use the search bar at the top to find classes and members quickly.</li>
+            <li>PDF outputs (if enabled) are available via <a href="toc.pdf">toc.pdf</a> and also inside <code>api/</code> and <code>docs/</code>.</li>
+          </ul>
+
+        </article>
+
+        <div class="contribution d-print-none"></div>
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
