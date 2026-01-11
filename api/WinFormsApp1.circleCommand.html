@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class circleCommand | BOOSE Documentation </title>
+      <title>Class CircleCommand | BOOSE Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class circleCommand | BOOSE Documentation ">
+      <meta name="title" content="Class CircleCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Represents the BOOSE command &amp;quot;circle&amp;quot;, used to draw a circle on the canvas. Supports: circle &amp;lt;radius&amp;gt; [true/false] for filled or outlined.">
+      <meta name="description" content="Implements the BOOSE circle command, which draws a circle on the canvas using the current pen settings.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/new/main/apiSpec/new?filename=WinFormsApp1_circleCommand.md&amp;value=---%0Auid%3A%20WinFormsApp1.circleCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/new/main/apiSpec/new?filename=WinFormsApp1_CircleCommand.md&amp;value=---%0Auid%3A%20WinFormsApp1.CircleCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="WinFormsApp1.circleCommand">
+        <article data-uid="WinFormsApp1.CircleCommand">
 
 
 
-  <h1 id="WinFormsApp1_circleCommand" data-uid="WinFormsApp1.circleCommand" class="text-break">
-Class circleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="WinFormsApp1_CircleCommand" data-uid="WinFormsApp1.CircleCommand" class="text-break">
+Class CircleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,13 @@ Class circleCommand  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the BOOSE command &quot;circle&quot;, used to draw a circle on the canvas.
-Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
+  <div class="markdown summary"><p>Implements the BOOSE <code>circle</code> command, which draws a circle on the canvas
+using the current pen settings.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class circleCommand : CommandOneParameter, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class CircleCommand : Command, ICommand</code></pre>
   </div>
 
 
@@ -114,9 +114,7 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">circleCommand</span></div>
+      <div><span class="xref">CircleCommand</span></div>
     </dd>
   </dl>
 
@@ -131,24 +129,6 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -208,31 +188,35 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
 
 
 
+  <h2 id="WinFormsApp1_CircleCommand_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The radius of the circle is provided as an integer expression and is
+evaluated at runtime. The circle is drawn at the current canvas position.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="WinFormsApp1_circleCommand__ctor_" data-uid="WinFormsApp1.circleCommand.#ctor*"></a>
+  <a id="WinFormsApp1_CircleCommand__ctor_" data-uid="WinFormsApp1.CircleCommand.#ctor*"></a>
 
-  <h3 id="WinFormsApp1_circleCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.circleCommand.#ctor(BOOSE.ICanvas)">
-  circleCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WinFormsApp1_CircleCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.CircleCommand.#ctor(BOOSE.ICanvas)">
+  CircleCommand(ICanvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="WinFormsApp1.circleCommand.html">circleCommand</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.circleCommand.html">CircleCommand</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public circleCommand(ICanvas canvas)</code></pre>
+    <pre><code class="lang-csharp hljs">public CircleCommand(ICanvas canvas)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas on which the circle will be drawn.</p>
+    <dd><p>The canvas used to render the circle.</p>
 </dd>
   </dl>
 
@@ -251,25 +235,25 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
 </h2>
 
 
-  <a id="WinFormsApp1_circleCommand_CheckParameters_" data-uid="WinFormsApp1.circleCommand.CheckParameters*"></a>
+  <a id="WinFormsApp1_CircleCommand_CheckParameters_" data-uid="WinFormsApp1.CircleCommand.CheckParameters*"></a>
 
-  <h3 id="WinFormsApp1_circleCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.circleCommand.CheckParameters(System.String[])">
+  <h3 id="WinFormsApp1_CircleCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.CircleCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates the number of parameters for the circle command.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] p)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Array of parameters.</p>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The parameter list supplied to the command.</p>
 </dd>
   </dl>
 
@@ -280,24 +264,21 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
 
 
 
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if parameter count is invalid.</p>
-</dd>
-  </dl>
+  <h4 class="section" id="WinFormsApp1_CircleCommand_CheckParameters_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Parameter validation is handled during <a class="xref" href="WinFormsApp1.circleCommand.html#WinFormsApp1_CircleCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a>.</p>
+</div>
 
 
 
-  <a id="WinFormsApp1_circleCommand_Compile_" data-uid="WinFormsApp1.circleCommand.Compile*"></a>
 
-  <h3 id="WinFormsApp1_circleCommand_Compile" data-uid="WinFormsApp1.circleCommand.Compile">
+  <a id="WinFormsApp1_CircleCommand_Compile_" data-uid="WinFormsApp1.CircleCommand.Compile*"></a>
+
+  <h3 id="WinFormsApp1_CircleCommand_Compile" data-uid="WinFormsApp1.CircleCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Converts parameters into executable values (parses radius and fill flag).</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation for the command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -313,24 +294,22 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
 
 
 
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if radius is invalid or the fill flag is not &quot;true&quot;/&quot;false&quot;.</p>
-</dd>
-  </dl>
+  <h4 class="section" id="WinFormsApp1_CircleCommand_Compile_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>No compile-time checks are required for the circle command.</p>
+</div>
 
 
 
-  <a id="WinFormsApp1_circleCommand_Execute_" data-uid="WinFormsApp1.circleCommand.Execute*"></a>
 
-  <h3 id="WinFormsApp1_circleCommand_Execute" data-uid="WinFormsApp1.circleCommand.Execute">
+  <a id="WinFormsApp1_CircleCommand_Execute_" data-uid="WinFormsApp1.CircleCommand.Execute*"></a>
+
+  <h3 id="WinFormsApp1_CircleCommand_Execute" data-uid="WinFormsApp1.CircleCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the circle command on the canvas.</p>
+  <div class="markdown level1 summary"><p>Executes the circle command by evaluating the radius expression
+and drawing the circle on the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -347,31 +326,37 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown if the evaluated radius is less than or equal to zero.</p>
+</dd>
+  </dl>
 
 
 
-  <a id="WinFormsApp1_circleCommand_Set_" data-uid="WinFormsApp1.circleCommand.Set*"></a>
+  <a id="WinFormsApp1_CircleCommand_Set_" data-uid="WinFormsApp1.CircleCommand.Set*"></a>
 
-  <h3 id="WinFormsApp1_circleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.circleCommand.Set(BOOSE.StoredProgram,System.String)">
+  <h3 id="WinFormsApp1_CircleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.CircleCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the program and parses the command parameters.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the circle drawing command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>Stored BOOSE program instance.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current <span class="xref">BOOSE.StoredProgram</span> instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Command parameters as a string.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter string representing the circle radius expression.</p>
 </dd>
   </dl>
 
@@ -386,7 +371,7 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if the parameter format is invalid.</p>
+    <dd><p>Thrown when the radius parameter is missing or invalid.</p>
 </dd>
   </dl>
 
@@ -396,7 +381,7 @@ Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/circleCommand.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

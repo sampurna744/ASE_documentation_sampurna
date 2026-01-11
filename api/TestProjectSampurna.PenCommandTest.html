@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PenCommandTest | BOOSE Documentation ">
       
-      <meta name="description" content="Unit tests for the  class. Ensures RGB parsing, validation, and canvas interaction behave correctly.">
+      <meta name="description" content="Contains unit tests for the  class. These tests verify correct parameter parsing, validation, and execution behaviour when setting the pen colour.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="TestProjectSampurna_PenCommandTest" data-uid="TestProjectSampurna.PenCommandTest" class="text-break">
-Class PenCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class PenCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class PenCommandTest  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Unit tests for the <a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a> class.
-Ensures RGB parsing, validation, and canvas interaction behave correctly.</p>
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a> class.
+These tests verify correct parameter parsing, validation,
+and execution behaviour when setting the pen colour.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -155,15 +156,44 @@ public class PenCommandTest</code></pre>
 </h2>
 
 
+  <a id="TestProjectSampurna_PenCommandTest_Execute_AllowsCommaSeparatedParams_" data-uid="TestProjectSampurna.PenCommandTest.Execute_AllowsCommaSeparatedParams*"></a>
+
+  <h3 id="TestProjectSampurna_PenCommandTest_Execute_AllowsCommaSeparatedParams" data-uid="TestProjectSampurna.PenCommandTest.Execute_AllowsCommaSeparatedParams">
+  Execute_AllowsCommaSeparatedParams()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that comma-separated RGB parameters
+are accepted and correctly parsed by the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_AllowsCommaSeparatedParams()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TestProjectSampurna_PenCommandTest_Execute_ShouldSetPenColour_WhenValidRGB_" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldSetPenColour_WhenValidRGB*"></a>
 
   <h3 id="TestProjectSampurna_PenCommandTest_Execute_ShouldSetPenColour_WhenValidRGB" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldSetPenColour_WhenValidRGB">
   Execute_ShouldSetPenColour_WhenValidRGB()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Verifies that valid RGB parameters correctly set the pen colour
-on the canvas through <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">SetColour(int, int, int)</a>.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with valid RGB values
+sets the pen colour on the canvas correctly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -184,22 +214,23 @@ public void Execute_ShouldSetPenColour_WhenValidRGB()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenBIsNotNumber_" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenBIsNotNumber*"></a>
+  <a id="TestProjectSampurna_PenCommandTest_Execute_ShouldThrow_WhenBIsNotNumber_" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldThrow_WhenBIsNotNumber*"></a>
 
-  <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenBIsNotNumber" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenBIsNotNumber">
-  Set_ShouldThrow_WhenBIsNotNumber()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_PenCommandTest_Execute_ShouldThrow_WhenBIsNotNumber" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldThrow_WhenBIsNotNumber">
+  Execute_ShouldThrow_WhenBIsNotNumber()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures an exception is thrown when the B (blue) component
-is not a valid numeric value.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) blue colour expression throws a
+<span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenBIsNotNumber()</code></pre>
+public void Execute_ShouldThrow_WhenBIsNotNumber()</code></pre>
   </div>
 
 
@@ -214,22 +245,23 @@ public void Set_ShouldThrow_WhenBIsNotNumber()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenBIsOutOfRange_" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenBIsOutOfRange*"></a>
+  <a id="TestProjectSampurna_PenCommandTest_Execute_ShouldThrow_WhenGIsNotNumber_" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldThrow_WhenGIsNotNumber*"></a>
 
-  <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenBIsOutOfRange" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenBIsOutOfRange">
-  Set_ShouldThrow_WhenBIsOutOfRange()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_PenCommandTest_Execute_ShouldThrow_WhenGIsNotNumber" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldThrow_WhenGIsNotNumber">
+  Execute_ShouldThrow_WhenGIsNotNumber()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures an exception is thrown when the B (blue) component
-exceeds the allowed range (0–255).</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) green colour expression throws a
+<span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenBIsOutOfRange()</code></pre>
+public void Execute_ShouldThrow_WhenGIsNotNumber()</code></pre>
   </div>
 
 
@@ -244,52 +276,23 @@ public void Set_ShouldThrow_WhenBIsOutOfRange()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenGIsNotNumber_" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenGIsNotNumber*"></a>
+  <a id="TestProjectSampurna_PenCommandTest_Execute_ShouldThrow_WhenRIsNotNumber_" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldThrow_WhenRIsNotNumber*"></a>
 
-  <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenGIsNotNumber" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenGIsNotNumber">
-  Set_ShouldThrow_WhenGIsNotNumber()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_PenCommandTest_Execute_ShouldThrow_WhenRIsNotNumber" data-uid="TestProjectSampurna.PenCommandTest.Execute_ShouldThrow_WhenRIsNotNumber">
+  Execute_ShouldThrow_WhenRIsNotNumber()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures an exception is thrown when the G (green) component
-contains invalid (non-numeric) input.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) red colour expression throws a
+<span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenGIsNotNumber()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenGIsOutOfRange_" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenGIsOutOfRange*"></a>
-
-  <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenGIsOutOfRange" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenGIsOutOfRange">
-  Set_ShouldThrow_WhenGIsOutOfRange()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L72"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures an exception is thrown when the G (green) component
-is outside the allowed RGB range (0–255).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenGIsOutOfRange()</code></pre>
+public void Execute_ShouldThrow_WhenRIsNotNumber()</code></pre>
   </div>
 
 
@@ -308,11 +311,11 @@ public void Set_ShouldThrow_WhenGIsOutOfRange()</code></pre>
 
   <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenNotThreeParameters" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenNotThreeParameters">
   Set_ShouldThrow_WhenNotThreeParameters()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the command throws an exception when fewer than
-three parameters are supplied to the pen command.</p>
+  <div class="markdown level1 summary"><p>Ensures that providing fewer or more than three parameters
+to <a class="xref" href="WinFormsApp1.PenCommand.html#WinFormsApp1_PenCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -334,75 +337,15 @@ public void Set_ShouldThrow_WhenNotThreeParameters()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenRIsNotNumber_" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenRIsNotNumber*"></a>
-
-  <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenRIsNotNumber" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenRIsNotNumber">
-  Set_ShouldThrow_WhenRIsNotNumber()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L61"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures an exception is thrown when the R (red) component
-is not a valid integer value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenRIsNotNumber()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenRIsOutOfRange_" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenRIsOutOfRange*"></a>
-
-  <h3 id="TestProjectSampurna_PenCommandTest_Set_ShouldThrow_WhenRIsOutOfRange" data-uid="TestProjectSampurna.PenCommandTest.Set_ShouldThrow_WhenRIsOutOfRange">
-  Set_ShouldThrow_WhenRIsOutOfRange()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L50"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures an exception is thrown when the R (red) component
-is outside the allowed range (0–255).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenRIsOutOfRange()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="TestProjectSampurna_PenCommandTest_Setup_" data-uid="TestProjectSampurna.PenCommandTest.Setup*"></a>
 
   <h3 id="TestProjectSampurna_PenCommandTest_Setup" data-uid="TestProjectSampurna.PenCommandTest.Setup">
   Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a fresh mock canvas, stored program,
-and <a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a> instance before each test.</p>
+  <div class="markdown level1 summary"><p>Creates a fresh mock canvas, stored program,
+and pen command instance before each test runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -427,7 +370,7 @@ public void Setup()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/PenCommandTest.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class WriteCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Represents the write command in the BOOSE language. This command displays text at the canvas&#39;s current pen position. Supports both quoted and unquoted messages. Examples: write &quot;Hello World&quot; write &#39;Test Message&#39; write Hello">
+      <meta name="description" content="Implements the BOOSE write command, which displays text on the canvas.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="WinFormsApp1_WriteCommand" data-uid="WinFormsApp1.WriteCommand" class="text-break">
-Class WriteCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L18"><i class="bi bi-code-slash"></i></a>
+Class WriteCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,7 @@ Class WriteCommand  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the <code>write</code> command in the BOOSE language.
-This command displays text at the canvas's current pen position.
-Supports both quoted and unquoted messages.</p>
-<p>Examples:</p>
-<pre><code class="lang-csharp">write "Hello World"
-write 'Test Message'
-write Hello</code></pre>
+  <div class="markdown summary"><p>Implements the BOOSE <code>write</code> command, which displays text on the canvas.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -203,7 +197,7 @@ write Hello</code></pre>
 
   <h3 id="WinFormsApp1_WriteCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.WriteCommand.#ctor(BOOSE.ICanvas)">
   WriteCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.WriteCommand.html">WriteCommand</a> class.</p>
@@ -217,7 +211,7 @@ write Hello</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas where text will be rendered.</p>
+    <dd><p>The canvas used for text output.</p>
 </dd>
   </dl>
 
@@ -229,12 +223,6 @@ write Hello</code></pre>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown if <code class="paramref">canvas</code> is <code>null</code>.</p>
-</dd>
-  </dl>
 
 
 
@@ -246,23 +234,21 @@ write Hello</code></pre>
 
   <h3 id="WinFormsApp1_WriteCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.WriteCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Performs compile-time validation.
-Not required for <code>write</code> since validation occurs in <a class="xref" href="WinFormsApp1.WriteCommand.html#WinFormsApp1_WriteCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a>.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] p)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Parameter array passed for validation.</p>
-</dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
   </dl>
 
 
@@ -280,11 +266,10 @@ Not required for <code>write</code> since validation occurs in <a class="xref" h
 
   <h3 id="WinFormsApp1_WriteCommand_Compile" data-uid="WinFormsApp1.WriteCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Performs any compile-time processing.
-The <code>write</code> command has no compile step.</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -308,11 +293,10 @@ The <code>write</code> command has no compile step.</p>
 
   <h3 id="WinFormsApp1_WriteCommand_Execute" data-uid="WinFormsApp1.WriteCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the command by drawing the stored message on the canvas.
-Called by <span class="xref">BOOSE.StoredProgram.Run()</span>.</p>
+  <div class="markdown level1 summary"><p>Evaluates the expression and writes the resulting text to the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -336,42 +320,35 @@ Called by <span class="xref">BOOSE.StoredProgram.Run()</span>.</p>
 
   <h3 id="WinFormsApp1_WriteCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.WriteCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Parses and stores the message text to be written.
-This method is called by the BOOSE parser.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the write command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>The current program context.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current program instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The raw message string, possibly quoted.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if no valid message text is provided.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The expression or text to be displayed on the canvas.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -379,7 +356,7 @@ This method is called by the BOOSE parser.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L18" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/WriteCommand.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

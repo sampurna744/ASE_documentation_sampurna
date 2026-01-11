@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MoveToCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Represents the BOOSE moveto command. Moves the canvas cursor to a specified (x, y) position without drawing.">
+      <meta name="description" content="Implements the BOOSE moveto command, which moves the current canvas position without drawing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="WinFormsApp1_MoveToCommand" data-uid="WinFormsApp1.MoveToCommand" class="text-break">
-Class MoveToCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class MoveToCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,13 @@ Class MoveToCommand  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the BOOSE <code>moveto</code> command.
-Moves the canvas cursor to a specified (x, y) position without drawing.</p>
+  <div class="markdown summary"><p>Implements the BOOSE <code>moveto</code> command, which moves the current
+canvas position without drawing.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MoveToCommand : CommandTwoParameters, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class MoveToCommand : Command, ICommand</code></pre>
   </div>
 
 
@@ -114,9 +114,6 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">CommandTwoParameters</span></div>
       <div><span class="xref">MoveToCommand</span></div>
     </dd>
   </dl>
@@ -132,30 +129,6 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandTwoParameters.param2</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -225,10 +198,10 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
   <h3 id="WinFormsApp1_MoveToCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.MoveToCommand.#ctor(BOOSE.ICanvas)">
   MoveToCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a> using the provided canvas.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -239,7 +212,7 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas object where drawing operations occur.</p>
+    <dd><p>The canvas used for positioning.</p>
 </dd>
   </dl>
 
@@ -262,10 +235,10 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
   <h3 id="WinFormsApp1_MoveToCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.MoveToCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates that the correct number of parameters are provided.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -276,8 +249,7 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Array of parameter strings.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -288,12 +260,6 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when incorrect parameter count is used.</p>
-</dd>
-  </dl>
 
 
 
@@ -301,10 +267,10 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
   <h3 id="WinFormsApp1_MoveToCommand_Compile" data-uid="WinFormsApp1.MoveToCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compiles and converts the string parameters into integer coordinates.</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -321,12 +287,6 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if parameters cannot be converted to integers.</p>
-</dd>
-  </dl>
 
 
 
@@ -334,10 +294,10 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
   <h3 id="WinFormsApp1_MoveToCommand_Execute" data-uid="WinFormsApp1.MoveToCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the <code>moveto</code> command and updates the canvas cursor position.</p>
+  <div class="markdown level1 summary"><p>Executes the move-to command by updating the current canvas position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -361,41 +321,35 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 
   <h3 id="WinFormsApp1_MoveToCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.MoveToCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets and parses the parameters for the command.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the move-to command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>The current stored BOOSE program.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current program instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The raw parameter string (e.g., &quot;100 200&quot;).</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when parameters are missing or invalid.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter string containing the target X and Y expressions.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -403,7 +357,7 @@ Moves the canvas cursor to a specified (x, y) position without drawing.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/MoveToCommand.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

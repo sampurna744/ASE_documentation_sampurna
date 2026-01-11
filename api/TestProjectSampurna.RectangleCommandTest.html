@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class RectangleCommandTest | BOOSE Documentation ">
       
-      <meta name="description" content="Unit tests for the  class. Verifies rectangle drawing, fill handling, error validation, and parameter parsing.">
+      <meta name="description" content="Contains unit tests for the  class. These tests verify correct parameter parsing, validation, and execution behaviour when drawing rectangles on the canvas.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="TestProjectSampurna_RectangleCommandTest" data-uid="TestProjectSampurna.RectangleCommandTest" class="text-break">
-Class RectangleCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class RectangleCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class RectangleCommandTest  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Unit tests for the <a class="xref" href="WinFormsApp1.rectangleCommand.html">rectangleCommand</a> class.
-Verifies rectangle drawing, fill handling, error validation, and parameter parsing.</p>
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="WinFormsApp1.rectangleCommand.html">RectangleCommand</a> class.
+These tests verify correct parameter parsing, validation,
+and execution behaviour when drawing rectangles on the canvas.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -155,14 +156,44 @@ public class RectangleCommandTest</code></pre>
 </h2>
 
 
+  <a id="TestProjectSampurna_RectangleCommandTest_Execute_AllowsCommaSeparatedParams_" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_AllowsCommaSeparatedParams*"></a>
+
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_AllowsCommaSeparatedParams" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_AllowsCommaSeparatedParams">
+  Execute_AllowsCommaSeparatedParams()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that comma-separated parameters are accepted
+and correctly parsed by the rectangle command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_AllowsCommaSeparatedParams()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldDrawFilledRectangle_WhenTruePassed_" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldDrawFilledRectangle_WhenTruePassed*"></a>
 
   <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldDrawFilledRectangle_WhenTruePassed" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldDrawFilledRectangle_WhenTruePassed">
   Execute_ShouldDrawFilledRectangle_WhenTruePassed()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the rectangle is drawn as filled when the parameter &quot;true&quot; is supplied.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with the optional
+<code>true</code> fill parameter draws a filled rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -187,11 +218,11 @@ public void Execute_ShouldDrawFilledRectangle_WhenTruePassed()</code></pre>
 
   <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldDrawRectangle_WithValidParameters" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldDrawRectangle_WithValidParameters">
   Execute_ShouldDrawRectangle_WithValidParameters()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures a valid width and height cause a rectangle to be drawn
-and that the fill flag defaults to false.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with valid width and height
+draws an unfilled rectangle with the expected dimensions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -216,10 +247,11 @@ public void Execute_ShouldDrawRectangle_WithValidParameters()</code></pre>
 
   <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldDrawUnfilledRectangle_WhenFalsePassed" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldDrawUnfilledRectangle_WhenFalsePassed">
   Execute_ShouldDrawUnfilledRectangle_WhenFalsePassed()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the rectangle is drawn unfilled when the parameter &quot;false&quot; is supplied.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with the optional
+<code>false</code> fill parameter draws an unfilled rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -240,22 +272,22 @@ public void Execute_ShouldDrawUnfilledRectangle_WhenFalsePassed()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenFillIsInvalid_" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenFillIsInvalid*"></a>
+  <a id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldThrow_WhenHeightIsNegative_" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldThrow_WhenHeightIsNegative*"></a>
 
-  <h3 id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenFillIsInvalid" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenFillIsInvalid">
-  Set_ShouldThrow_WhenFillIsInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldThrow_WhenHeightIsNegative" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldThrow_WhenHeightIsNegative">
+  Execute_ShouldThrow_WhenHeightIsNegative()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the optional fill parameter only accepts the values
-&quot;true&quot; or &quot;false&quot;, throwing an exception for anything else.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with a negative height
+throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenFillIsInvalid()</code></pre>
+public void Execute_ShouldThrow_WhenHeightIsNegative()</code></pre>
   </div>
 
 
@@ -270,22 +302,22 @@ public void Set_ShouldThrow_WhenFillIsInvalid()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenHeightIsInvalid_" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenHeightIsInvalid*"></a>
+  <a id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldThrow_WhenWidthExpressionInvalid_" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldThrow_WhenWidthExpressionInvalid*"></a>
 
-  <h3 id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenHeightIsInvalid" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenHeightIsInvalid">
-  Set_ShouldThrow_WhenHeightIsInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldThrow_WhenWidthExpressionInvalid" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldThrow_WhenWidthExpressionInvalid">
+  Execute_ShouldThrow_WhenWidthExpressionInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the command throws an exception when the height parameter
-is not a positive integer.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) width expression throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenHeightIsInvalid()</code></pre>
+public void Execute_ShouldThrow_WhenWidthExpressionInvalid()</code></pre>
   </div>
 
 
@@ -296,6 +328,70 @@ public void Set_ShouldThrow_WhenHeightIsInvalid()</code></pre>
 
 
 
+
+
+
+
+  <a id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldThrow_WhenWidthIsZero_" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldThrow_WhenWidthIsZero*"></a>
+
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Execute_ShouldThrow_WhenWidthIsZero" data-uid="TestProjectSampurna.RectangleCommandTest.Execute_ShouldThrow_WhenWidthIsZero">
+  Execute_ShouldThrow_WhenWidthIsZero()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that executing the command with a width of zero
+throws a <span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_ShouldThrow_WhenWidthIsZero()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenFillIsInvalid_FormatException_" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenFillIsInvalid_FormatException*"></a>
+
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenFillIsInvalid_FormatException" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenFillIsInvalid_FormatException">
+  Set_ShouldThrow_WhenFillIsInvalid_FormatException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that providing an invalid fill parameter value
+causes a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.formatexception">FormatException</a> to be thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(FormatException))]
+public void Set_ShouldThrow_WhenFillIsInvalid_FormatException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenFillIsInvalid_FormatException_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This occurs because <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean.parse#system-boolean-parse(system-string)">Parse(string)</a> is used
+and the value is not validated inside the command.</p>
+</div>
 
 
 
@@ -304,11 +400,11 @@ public void Set_ShouldThrow_WhenHeightIsInvalid()</code></pre>
 
   <h3 id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenMissingParameters" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenMissingParameters">
   Set_ShouldThrow_WhenMissingParameters()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the command throws an exception when fewer than the required
-two or three parameters are supplied.</p>
+  <div class="markdown level1 summary"><p>Ensures that calling <a class="xref" href="WinFormsApp1.rectangleCommand.html#WinFormsApp1_RectangleCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> with
+fewer than the required parameters throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -330,22 +426,52 @@ public void Set_ShouldThrow_WhenMissingParameters()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenWidthIsInvalid_" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenWidthIsInvalid*"></a>
+  <a id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenTooManyParameters_" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenTooManyParameters*"></a>
 
-  <h3 id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenWidthIsInvalid" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenWidthIsInvalid">
-  Set_ShouldThrow_WhenWidthIsInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Set_ShouldThrow_WhenTooManyParameters" data-uid="TestProjectSampurna.RectangleCommandTest.Set_ShouldThrow_WhenTooManyParameters">
+  Set_ShouldThrow_WhenTooManyParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures the command throws an exception when the width parameter
-is non-numeric or invalid.</p>
+  <div class="markdown level1 summary"><p>Ensures that calling <a class="xref" href="WinFormsApp1.rectangleCommand.html#WinFormsApp1_RectangleCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> with
+more than the allowed number of parameters throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenWidthIsInvalid()</code></pre>
+public void Set_ShouldThrow_WhenTooManyParameters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_RectangleCommandTest_Set_WithTwoParams_Succeeds_AndDoesNotDraw_" data-uid="TestProjectSampurna.RectangleCommandTest.Set_WithTwoParams_Succeeds_AndDoesNotDraw*"></a>
+
+  <h3 id="TestProjectSampurna_RectangleCommandTest_Set_WithTwoParams_Succeeds_AndDoesNotDraw" data-uid="TestProjectSampurna.RectangleCommandTest.Set_WithTwoParams_Succeeds_AndDoesNotDraw">
+  Set_WithTwoParams_Succeeds_AndDoesNotDraw()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that providing only width and height parameters
+to <a class="xref" href="WinFormsApp1.rectangleCommand.html#WinFormsApp1_RectangleCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> succeeds and does not
+immediately draw a rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_WithTwoParams_Succeeds_AndDoesNotDraw()</code></pre>
   </div>
 
 
@@ -364,11 +490,11 @@ public void Set_ShouldThrow_WhenWidthIsInvalid()</code></pre>
 
   <h3 id="TestProjectSampurna_RectangleCommandTest_Setup" data-uid="TestProjectSampurna.RectangleCommandTest.Setup">
   Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new mock canvas, stored program,
-and rectangle command instance before each test.</p>
+  <div class="markdown level1 summary"><p>Creates a fresh mock canvas, stored program,
+and rectangle command instance before each test runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -393,7 +519,7 @@ public void Setup()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/RectangleCommandTest.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

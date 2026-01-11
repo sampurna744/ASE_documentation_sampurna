@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class WriteCommandTest | BOOSE Documentation ">
       
-      <meta name="description" content="Unit tests for the WinFormsApp1.WriteCommand class. Ensures messages are parsed, validated, cleaned, and executed correctly.">
+      <meta name="description" content="Contains unit tests for the  class. These tests verify correct parameter validation and execution behaviour when writing text to the canvas.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="TestProjectSampurna_WriteCommandTest" data-uid="TestProjectSampurna.WriteCommandTest" class="text-break">
-Class WriteCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class WriteCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class WriteCommandTest  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Unit tests for the WinFormsApp1.WriteCommand class.
-Ensures messages are parsed, validated, cleaned, and executed correctly.</p>
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="WinFormsApp1.WriteCommand.html">WriteCommand</a> class.
+These tests verify correct parameter validation and execution
+behaviour when writing text to the canvas.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -155,20 +156,21 @@ public class WriteCommandTest</code></pre>
 </h2>
 
 
-  <a id="TestProjectSampurna_WriteCommandTest_Execute_ValidMessage_CallsWriteText_" data-uid="TestProjectSampurna.WriteCommandTest.Execute_ValidMessage_CallsWriteText*"></a>
+  <a id="TestProjectSampurna_WriteCommandTest_Execute_CalledOnce_WritesOnce_" data-uid="TestProjectSampurna.WriteCommandTest.Execute_CalledOnce_WritesOnce*"></a>
 
-  <h3 id="TestProjectSampurna_WriteCommandTest_Execute_ValidMessage_CallsWriteText" data-uid="TestProjectSampurna.WriteCommandTest.Execute_ValidMessage_CallsWriteText">
-  Execute_ValidMessage_CallsWriteText()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_WriteCommandTest_Execute_CalledOnce_WritesOnce" data-uid="TestProjectSampurna.WriteCommandTest.Execute_CalledOnce_WritesOnce">
+  Execute_CalledOnce_WritesOnce()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Confirms Execute() calls WriteText exactly once.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command writes text
+exactly once to the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void Execute_ValidMessage_CallsWriteText()</code></pre>
+public void Execute_CalledOnce_WritesOnce()</code></pre>
   </div>
 
 
@@ -183,48 +185,21 @@ public void Execute_ValidMessage_CallsWriteText()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_WriteCommandTest_Parameters_AfterSet_StoredCorrectly_" data-uid="TestProjectSampurna.WriteCommandTest.Parameters_AfterSet_StoredCorrectly*"></a>
+  <a id="TestProjectSampurna_WriteCommandTest_Execute_UnquotedLiteral_WritesText_" data-uid="TestProjectSampurna.WriteCommandTest.Execute_UnquotedLiteral_WritesText*"></a>
 
-  <h3 id="TestProjectSampurna_WriteCommandTest_Parameters_AfterSet_StoredCorrectly" data-uid="TestProjectSampurna.WriteCommandTest.Parameters_AfterSet_StoredCorrectly">
-  Parameters_AfterSet_StoredCorrectly()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L107"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures parameters are stored correctly for BOOSE compatibility.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-public void Parameters_AfterSet_StoredCorrectly()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_WriteCommandTest_Set_DoubleQuotedMessage_RemovesQuotes_" data-uid="TestProjectSampurna.WriteCommandTest.Set_DoubleQuotedMessage_RemovesQuotes*"></a>
-
-  <h3 id="TestProjectSampurna_WriteCommandTest_Set_DoubleQuotedMessage_RemovesQuotes" data-uid="TestProjectSampurna.WriteCommandTest.Set_DoubleQuotedMessage_RemovesQuotes">
-  Set_DoubleQuotedMessage_RemovesQuotes()
+  <h3 id="TestProjectSampurna_WriteCommandTest_Execute_UnquotedLiteral_WritesText" data-uid="TestProjectSampurna.WriteCommandTest.Execute_UnquotedLiteral_WritesText">
+  Execute_UnquotedLiteral_WritesText()
   <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures Set() removes surrounding double quotes.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an unquoted
+literal string writes the expected text to the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-public void Set_DoubleQuotedMessage_RemovesQuotes()</code></pre>
+public void Execute_UnquotedLiteral_WritesText()</code></pre>
   </div>
 
 
@@ -239,21 +214,22 @@ public void Set_DoubleQuotedMessage_RemovesQuotes()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_WriteCommandTest_Set_EmptyString_Throws_" data-uid="TestProjectSampurna.WriteCommandTest.Set_EmptyString_Throws*"></a>
+  <a id="TestProjectSampurna_WriteCommandTest_Set_Empty_Throws_" data-uid="TestProjectSampurna.WriteCommandTest.Set_Empty_Throws*"></a>
 
-  <h3 id="TestProjectSampurna_WriteCommandTest_Set_EmptyString_Throws" data-uid="TestProjectSampurna.WriteCommandTest.Set_EmptyString_Throws">
-  Set_EmptyString_Throws()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_WriteCommandTest_Set_Empty_Throws" data-uid="TestProjectSampurna.WriteCommandTest.Set_Empty_Throws">
+  Set_Empty_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures WriteCommand fails when message is empty.</p>
+  <div class="markdown level1 summary"><p>Ensures that calling <a class="xref" href="WinFormsApp1.WriteCommand.html#WinFormsApp1_WriteCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> with
+an empty parameter string throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Set_EmptyString_Throws()</code></pre>
+public void Set_Empty_Throws()</code></pre>
   </div>
 
 
@@ -268,77 +244,22 @@ public void Set_EmptyString_Throws()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_WriteCommandTest_Set_QuotedEmptyString_Throws_" data-uid="TestProjectSampurna.WriteCommandTest.Set_QuotedEmptyString_Throws*"></a>
+  <a id="TestProjectSampurna_WriteCommandTest_Set_WhitespaceOnly_Throws_" data-uid="TestProjectSampurna.WriteCommandTest.Set_WhitespaceOnly_Throws*"></a>
 
-  <h3 id="TestProjectSampurna_WriteCommandTest_Set_QuotedEmptyString_Throws" data-uid="TestProjectSampurna.WriteCommandTest.Set_QuotedEmptyString_Throws">
-  Set_QuotedEmptyString_Throws()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_WriteCommandTest_Set_WhitespaceOnly_Throws" data-uid="TestProjectSampurna.WriteCommandTest.Set_WhitespaceOnly_Throws">
+  Set_WhitespaceOnly_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures WriteCommand fails when message contains empty quotes.</p>
+  <div class="markdown level1 summary"><p>Ensures that providing a parameter consisting only of
+whitespace to <a class="xref" href="WinFormsApp1.WriteCommand.html#WinFormsApp1_WriteCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> throws
+a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void Set_QuotedEmptyString_Throws()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_WriteCommandTest_Set_SingleQuotedMessage_RemovesQuotes_" data-uid="TestProjectSampurna.WriteCommandTest.Set_SingleQuotedMessage_RemovesQuotes*"></a>
-
-  <h3 id="TestProjectSampurna_WriteCommandTest_Set_SingleQuotedMessage_RemovesQuotes" data-uid="TestProjectSampurna.WriteCommandTest.Set_SingleQuotedMessage_RemovesQuotes">
-  Set_SingleQuotedMessage_RemovesQuotes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L60"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures Set() removes surrounding single quotes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-public void Set_SingleQuotedMessage_RemovesQuotes()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_WriteCommandTest_Set_UnquotedMessage_Success_" data-uid="TestProjectSampurna.WriteCommandTest.Set_UnquotedMessage_Success*"></a>
-
-  <h3 id="TestProjectSampurna_WriteCommandTest_Set_UnquotedMessage_Success" data-uid="TestProjectSampurna.WriteCommandTest.Set_UnquotedMessage_Success">
-  Set_UnquotedMessage_Success()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L32"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures Set() accepts a simple unquoted message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-public void Set_UnquotedMessage_Success()</code></pre>
+public void Set_WhitespaceOnly_Throws()</code></pre>
   </div>
 
 
@@ -357,10 +278,11 @@ public void Set_UnquotedMessage_Success()</code></pre>
 
   <h3 id="TestProjectSampurna_WriteCommandTest_Setup" data-uid="TestProjectSampurna.WriteCommandTest.Setup">
   Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates fresh Canvas, Program, and WriteCommand before every test.</p>
+  <div class="markdown level1 summary"><p>Creates a fresh mock canvas, stored program,
+and write command instance before each test runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -385,7 +307,7 @@ public void Setup()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/WriteCommandTest.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DrawToCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Implements the BOOSE drawto command. Draws a line from the current canvas position to a new (x, y) coordinate.">
+      <meta name="description" content="Implements the BOOSE drawto command, which draws a line from the current canvas position to a specified coordinate.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="WinFormsApp1_DrawToCommand" data-uid="WinFormsApp1.DrawToCommand" class="text-break">
-Class DrawToCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class DrawToCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,13 @@ Class DrawToCommand  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Implements the BOOSE <code>drawto</code> command.
-Draws a line from the current canvas position to a new (x, y) coordinate.</p>
+  <div class="markdown summary"><p>Implements the BOOSE <code>drawto</code> command, which draws a line from the
+current canvas position to a specified coordinate.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DrawToCommand : CommandTwoParameters, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class DrawToCommand : Command, ICommand</code></pre>
   </div>
 
 
@@ -114,9 +114,6 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">CommandTwoParameters</span></div>
       <div><span class="xref">DrawToCommand</span></div>
     </dd>
   </dl>
@@ -132,30 +129,6 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandTwoParameters.param2</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -215,6 +188,11 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
 
 
+  <h2 id="WinFormsApp1_DrawToCommand_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The target coordinates are provided as integer expressions and are
+evaluated at runtime. After drawing, the current canvas position
+is updated to the new location.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -225,10 +203,10 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
   <h3 id="WinFormsApp1_DrawToCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.DrawToCommand.#ctor(BOOSE.ICanvas)">
   DrawToCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new instance of <a class="xref" href="WinFormsApp1.DrawToCommand.html">DrawToCommand</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.DrawToCommand.html">DrawToCommand</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -239,7 +217,7 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas used for drawing.</p>
+    <dd><p>The canvas used to render the line.</p>
 </dd>
   </dl>
 
@@ -262,10 +240,10 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
   <h3 id="WinFormsApp1_DrawToCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.DrawToCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures exactly two parameters are provided: X and Y.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -276,7 +254,7 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Tokenized parameters.</p>
+    <dd><p>The parameter list supplied to the command.</p>
 </dd>
   </dl>
 
@@ -287,13 +265,10 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
 
 
+  <h4 class="section" id="WinFormsApp1_DrawToCommand_CheckParameters_System_String____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Parameter validation is handled during <a class="xref" href="WinFormsApp1.DrawToCommand.html#WinFormsApp1_DrawToCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a>.</p>
+</div>
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if the number of parameters is incorrect.</p>
-</dd>
-  </dl>
 
 
 
@@ -301,10 +276,10 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
   <h3 id="WinFormsApp1_DrawToCommand_Compile" data-uid="WinFormsApp1.DrawToCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Converts the raw parameter values into integers.</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation for the command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -320,13 +295,10 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
 
 
+  <h4 class="section" id="WinFormsApp1_DrawToCommand_Compile_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>No compile-time checks are required for the draw-to command.</p>
+</div>
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if X or Y cannot be parsed into valid integers.</p>
-</dd>
-  </dl>
 
 
 
@@ -334,11 +306,11 @@ Draws a line from the current canvas position to a new (x, y) coordinate.</p>
 
   <h3 id="WinFormsApp1_DrawToCommand_Execute" data-uid="WinFormsApp1.DrawToCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the command by drawing a line from the current canvas
-position to the specified (x, y) coordinate.</p>
+  <div class="markdown level1 summary"><p>Executes the draw-to command by evaluating the coordinate expressions
+and drawing a line to the specified point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -362,24 +334,24 @@ position to the specified (x, y) coordinate.</p>
 
   <h3 id="WinFormsApp1_DrawToCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.DrawToCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the command input parameters and prepares for validation and compilation.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the draw-to command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>The BOOSE stored program instance.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current <span class="xref">BOOSE.StoredProgram</span> instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The raw parameter string, expected in the format &quot;x y&quot;.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter string containing the target X and Y expressions.</p>
 </dd>
   </dl>
 
@@ -391,6 +363,12 @@ position to the specified (x, y) coordinate.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown when the parameter list does not contain exactly two values.</p>
+</dd>
+  </dl>
 
 
 
@@ -398,7 +376,7 @@ position to the specified (x, y) coordinate.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/DrawToCommand.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

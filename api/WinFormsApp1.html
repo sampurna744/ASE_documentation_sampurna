@@ -96,8 +96,38 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.AppCommandFactory.html">AppCommandFactory</a></dt>
-      <dd><p>Factory class responsible for creating application-specific BOOSE commands.
-Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom drawing commands.</p>
+      <dd><p>Application-specific command factory responsible for creating
+BOOSE command instances based on parsed command names.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.ArrayCommand.html">ArrayCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>array</code> command, allowing declaration and
+management of integer or real arrays within a BOOSE program.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.AssignCommand.html">AssignCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>assign</code> command, which assigns the result of an
+expression to an existing variable.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.BooleanCommand.html">BooleanCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>boolean</code> command, which declares and manages
+boolean variables within a BOOSE program.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.CallCommand.html">CallCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>call</code> command, which invokes a user-defined
+method and passes arguments to it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.circleCommand.html">CircleCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>circle</code> command, which draws a circle on the canvas
+using the current pen settings.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -107,61 +137,125 @@ Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom dra
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.DrawToCommand.html">DrawToCommand</a></dt>
-      <dd><p>Implements the BOOSE <code>drawto</code> command.
-Draws a line from the current canvas position to a new (x, y) coordinate.</p>
+      <dd><p>Implements the BOOSE <code>drawto</code> command, which draws a line from the
+current canvas position to a specified coordinate.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.ElseCommand.html">ElseCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>else</code> command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.EndForCommand.html">EndForCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>endfor</code> command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.EndIfCommand.html">EndIfCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>endif</code> command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.EndMethodCommand.html">EndMethodCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>endmethod</code> command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.EndWhileCommand.html">EndWhileCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>endwhile</code> command.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.ExtendedParser.html">ExtendedParser</a></dt>
+      <dd><p>Extends the BOOSE <span class="xref">BOOSE.Parser</span> to support additional syntax features,
+improved error aggregation, and integration with <a class="xref" href="WinFormsApp1.ExtendedStoredProgram.html">ExtendedStoredProgram</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.ExtendedStoredProgram.html">ExtendedStoredProgram</a></dt>
+      <dd><p>Extends <span class="xref">BOOSE.StoredProgram</span> to provide full runtime support
+for methods, variables, call stacks, and execution control.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.ForCommand.html">ForCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>for</code> loop command.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.Form1.html">Form1</a></dt>
-      <dd><p>Main form of the BOOSE drawing application.
-Handles execution of commands, program parsing, debugging output,
-file operations, and drawing through the ICanvas implementation.</p>
+      <dd><p>Main UI form for the BOOSE drawing interpreter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.IfCommand.html">IfCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>if</code> command for conditional execution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.IntCommand.html">IntCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>int</code> command for declaring and managing
+integer variables.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.MethodCommand.html">MethodCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>method</code> command for defining user methods.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a></dt>
-      <dd><p>Represents the BOOSE <code>moveto</code> command.
-Moves the canvas cursor to a specified (x, y) position without drawing.</p>
+      <dd><p>Implements the BOOSE <code>moveto</code> command, which moves the current
+canvas position without drawing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.PeekCommand.html">PeekCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>peek</code> command, which retrieves a value from an array
+and assigns it to an existing variable.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a></dt>
-      <dd><p>Represents a command that changes the pen colour on the canvas.</p>
+      <dd><p>Implements the BOOSE <code>pen</code> command, which sets the current drawing colour.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.PokeCommand.html">PokeCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>poke</code> command, which assigns a value to an array element.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.RealCommand.html">RealCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>real</code> command for declaring and managing
+floating-point variables.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.rectangleCommand.html">RectangleCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>rect</code> command, which draws a rectangle on the canvas.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.TriangleCommand.html">TriangleCommand</a></dt>
-      <dd><p>Represents the BOOSE command &quot;triangle&quot;, used to draw a triangle on the canvas.
-Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
+      <dd><p>Implements the BOOSE <code>tri</code> command, which draws a triangle on the canvas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="WinFormsApp1.WhileCommand.html">WhileCommand</a></dt>
+      <dd><p>Implements the BOOSE <code>while</code> command for conditional looping.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.WriteCommand.html">WriteCommand</a></dt>
-      <dd><p>Represents the <code>write</code> command in the BOOSE language.
-This command displays text at the canvas's current pen position.
-Supports both quoted and unquoted messages.</p>
-<p>Examples:</p>
-<pre><code class="lang-csharp">write "Hello World"
-write 'Test Message'
-write Hello</code></pre>
+      <dd><p>Implements the BOOSE <code>write</code> command, which displays text on the canvas.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="WinFormsApp1.canvasApp.html">canvasApp</a></dt>
       <dd><p>Canvas implementation used by BOOSE commands to draw shapes,
 lines, text, and manage pen state inside a bitmap.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="WinFormsApp1.circleCommand.html">circleCommand</a></dt>
-      <dd><p>Represents the BOOSE command &quot;circle&quot;, used to draw a circle on the canvas.
-Supports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="WinFormsApp1.rectangleCommand.html">rectangleCommand</a></dt>
-      <dd><p>Implements the RECT command used to draw rectangles on the canvas.
-Supports optional fill parameter (true/false).</p>
 </dd>
     </dl>
     <dl class="jumplist">

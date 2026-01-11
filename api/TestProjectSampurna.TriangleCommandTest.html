@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TriangleCommandTest | BOOSE Documentation ">
       
-      <meta name="description" content="Unit tests for the  class. Ensures correct validation, compilation and execution behaviour.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="TestProjectSampurna_TriangleCommandTest" data-uid="TestProjectSampurna.TriangleCommandTest" class="text-break">
-Class TriangleCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class TriangleCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,9 +97,7 @@ Class TriangleCommandTest  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Unit tests for the <a class="xref" href="WinFormsApp1.TriangleCommand.html">TriangleCommand</a> class.
-Ensures correct validation, compilation and execution behaviour.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -155,15 +153,208 @@ public class TriangleCommandTest</code></pre>
 </h2>
 
 
+  <a id="TestProjectSampurna_TriangleCommandTest_Execute_InvalidExpression_Throws_" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_InvalidExpression_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Execute_InvalidExpression_Throws" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_InvalidExpression_Throws">
+  Execute_InvalidExpression_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_InvalidExpression_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_TriangleCommandTest_Execute_NegativeSize_Throws_" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_NegativeSize_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Execute_NegativeSize_Throws" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_NegativeSize_Throws">
+  Execute_NegativeSize_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_NegativeSize_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_TriangleCommandTest_Execute_TooManyTokens_TreatedAsInvalidExpression_Throws_" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_TooManyTokens_TreatedAsInvalidExpression_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Execute_TooManyTokens_TreatedAsInvalidExpression_Throws" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_TooManyTokens_TreatedAsInvalidExpression_Throws">
+  Execute_TooManyTokens_TreatedAsInvalidExpression_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_TooManyTokens_TreatedAsInvalidExpression_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_TriangleCommandTest_Execute_ValidSize_DrawsTriangle_" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_ValidSize_DrawsTriangle*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Execute_ValidSize_DrawsTriangle" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_ValidSize_DrawsTriangle">
+  Execute_ValidSize_DrawsTriangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Execute_ValidSize_DrawsTriangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_TriangleCommandTest_Execute_ZeroSize_Throws_" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_ZeroSize_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Execute_ZeroSize_Throws" data-uid="TestProjectSampurna.TriangleCommandTest.Execute_ZeroSize_Throws">
+  Execute_ZeroSize_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_ZeroSize_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_TriangleCommandTest_Set_Empty_Throws_" data-uid="TestProjectSampurna.TriangleCommandTest.Set_Empty_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Set_Empty_Throws" data-uid="TestProjectSampurna.TriangleCommandTest.Set_Empty_Throws">
+  Set_Empty_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Set_Empty_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_TriangleCommandTest_Set_TrimsWhitespace_Succeeds_" data-uid="TestProjectSampurna.TriangleCommandTest.Set_TrimsWhitespace_Succeeds*"></a>
+
+  <h3 id="TestProjectSampurna_TriangleCommandTest_Set_TrimsWhitespace_Succeeds" data-uid="TestProjectSampurna.TriangleCommandTest.Set_TrimsWhitespace_Succeeds">
+  Set_TrimsWhitespace_Succeeds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_TrimsWhitespace_Succeeds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TestProjectSampurna_TriangleCommandTest_Setup_" data-uid="TestProjectSampurna.TriangleCommandTest.Setup*"></a>
 
   <h3 id="TestProjectSampurna_TriangleCommandTest_Setup" data-uid="TestProjectSampurna.TriangleCommandTest.Setup">
   Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new canvas and stored program before each test.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -183,184 +374,11 @@ public void Setup()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_Execute_ValidParameters_" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_Execute_ValidParameters*"></a>
-
-  <h3 id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_Execute_ValidParameters" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_Execute_ValidParameters">
-  TriangleCommand_Execute_ValidParameters()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command correctly executes and calls canvas.Tri().</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-public void TriangleCommand_Execute_ValidParameters()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_InvalidHeight_ThrowsException_" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_InvalidHeight_ThrowsException*"></a>
-
-  <h3 id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_InvalidHeight_ThrowsException" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_InvalidHeight_ThrowsException">
-  TriangleCommand_InvalidHeight_ThrowsException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L86"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command throws a CommandException when height is not numeric.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void TriangleCommand_InvalidHeight_ThrowsException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_InvalidWidth_ThrowsException_" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_InvalidWidth_ThrowsException*"></a>
-
-  <h3 id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_InvalidWidth_ThrowsException" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_InvalidWidth_ThrowsException">
-  TriangleCommand_InvalidWidth_ThrowsException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L75"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command throws a CommandException when width is not numeric.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void TriangleCommand_InvalidWidth_ThrowsException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_NegativeDimensions_ThrowsException_" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_NegativeDimensions_ThrowsException*"></a>
-
-  <h3 id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_NegativeDimensions_ThrowsException" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_NegativeDimensions_ThrowsException">
-  TriangleCommand_NegativeDimensions_ThrowsException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L97"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures negative dimensions are rejected by the compiler.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void TriangleCommand_NegativeDimensions_ThrowsException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_NoParameters_ThrowsException_" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_NoParameters_ThrowsException*"></a>
-
-  <h3 id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_NoParameters_ThrowsException" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_NoParameters_ThrowsException">
-  TriangleCommand_NoParameters_ThrowsException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L53"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command throws a CommandException when no parameters are provided.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void TriangleCommand_NoParameters_ThrowsException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_TooManyParameters_ThrowsException_" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_TooManyParameters_ThrowsException*"></a>
-
-  <h3 id="TestProjectSampurna_TriangleCommandTest_TriangleCommand_TooManyParameters_ThrowsException" data-uid="TestProjectSampurna.TriangleCommandTest.TriangleCommand_TooManyParameters_ThrowsException">
-  TriangleCommand_TooManyParameters_ThrowsException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L64"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command throws a CommandException when too many parameters are supplied.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void TriangleCommand_TooManyParameters_ThrowsException()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/TriangleCommandTest.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

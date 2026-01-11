@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AppCommandFactory | BOOSE Documentation ">
       
-      <meta name="description" content="Factory class responsible for creating application-specific BOOSE commands. Extends the  to support custom drawing commands.">
+      <meta name="description" content="Application-specific command factory responsible for creating BOOSE command instances based on parsed command names.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="WinFormsApp1_AppCommandFactory" data-uid="WinFormsApp1.AppCommandFactory" class="text-break">
-Class AppCommandFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class AppCommandFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,8 @@ Class AppCommandFactory  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Factory class responsible for creating application-specific BOOSE commands.
-Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom drawing commands.</p>
+  <div class="markdown summary"><p>Application-specific command factory responsible for creating
+BOOSE command instances based on parsed command names.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -155,6 +155,11 @@ Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom dra
 
 
 
+  <h2 id="WinFormsApp1_AppCommandFactory_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This factory extends <span class="xref">BOOSE.CommandFactory</span> and injects
+a shared <span class="xref">BOOSE.ICanvas</span> instance into all drawing-related
+commands so they can render onto the same canvas.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -165,7 +170,7 @@ Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom dra
 
   <h3 id="WinFormsApp1_AppCommandFactory__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.AppCommandFactory.#ctor(BOOSE.ICanvas)">
   AppCommandFactory(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.AppCommandFactory.html">AppCommandFactory</a> class.</p>
@@ -179,7 +184,7 @@ Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom dra
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas instance used by commands to draw.</p>
+    <dd><p>The canvas implementation that drawing commands will operate on.</p>
 </dd>
   </dl>
 
@@ -202,11 +207,10 @@ Extends the <span class="xref">BOOSE.CommandFactory</span> to support custom dra
 
   <h3 id="WinFormsApp1_AppCommandFactory_MakeCommand_System_String_" data-uid="WinFormsApp1.AppCommandFactory.MakeCommand(System.String)">
   MakeCommand(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a command instance based on the raw command name string.
-Supports custom application commands such as moveto, drawto, circle, rect, etc.</p>
+  <div class="markdown level1 summary"><p>Creates a concrete <span class="xref">BOOSE.ICommand</span> instance for the given command name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -217,14 +221,14 @@ Supports custom application commands such as moveto, drawto, circle, rect, etc.<
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rawName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The command keyword entered by the user.</p>
+    <dd><p>The raw command name as parsed from the BOOSE program text.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">ICommand</span></dt>
-    <dd><p>An instance of <span class="xref">BOOSE.ICommand</span> if matched; otherwise falls back to base factory.</p>
+    <dd><p>An initialized <span class="xref">BOOSE.ICommand</span> corresponding to the command name.</p>
 </dd>
   </dl>
 
@@ -238,7 +242,7 @@ Supports custom application commands such as moveto, drawto, circle, rect, etc.<
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when the command name is null, empty, or unrecognized.</p>
+    <dd><p>Thrown when the command name is null, empty, or consists only of whitespace.</p>
 </dd>
   </dl>
 
@@ -248,7 +252,7 @@ Supports custom application commands such as moveto, drawto, circle, rect, etc.<
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/AppCommandFactory.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

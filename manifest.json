@@ -12,6 +12,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.CircleCommandTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.CircleCommandTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.CircleCommandTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.CircleCommandTest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.CircleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests verify correct parameter parsing, validation,\nand execution behaviour when drawing circles on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TestProjectSampurna.ClearCommandTest.yml",
       "output": {
         ".html": {
@@ -36,7 +50,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TestProjectSampurna.DrawToCommandTest",
-      "Summary": "<p sourcefile=\"api/TestProjectSampurna.DrawToCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the WinFormsApp1.DrawToCommand class.\nEnsures parameters are parsed, validated, compiled, and executed correctly.</p>\n"
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.DrawToCommandTest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.DrawToCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests verify correct parameter parsing, validation,\nand execution behaviour when drawing lines on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.IfsAndLoopstest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.IfsAndLoopstest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.IfsAndLoopstest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.IfsAndLoopstest.yml\" sourcestartlinenumber=\"1\">End-to-end unit tests for IF / IF-ELSE / WHILE / FOR commands.\nThese tests execute real BOOSE programs using ExtendedParser\nand validate behaviour via canvas output.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.MethodAndCallCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.MethodAndCallCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.MethodAndCallCommandTests",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.MethodAndCallCommandTests.yml\" sourcestartlinenumber=\"1\">Contains end-to-end unit tests for BOOSE method definition and invocation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -64,7 +106,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TestProjectSampurna.MoveToCommandTest",
-      "Summary": "<p sourcefile=\"api/TestProjectSampurna.MoveToCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.MoveToCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nVerifies correct parameter parsing, error handling,\nand that the canvas cursor is moved to the correct coordinates.</p>\n"
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.MoveToCommandTest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.MoveToCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests verify correct parameter parsing, validation,\nand execution behaviour when moving the canvas cursor.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -92,7 +134,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TestProjectSampurna.PenCommandTest",
-      "Summary": "<p sourcefile=\"api/TestProjectSampurna.PenCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.PenCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures RGB parsing, validation, and canvas interaction behave correctly.</p>\n"
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.PenCommandTest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.PenCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests verify correct parameter parsing, validation,\nand execution behaviour when setting the pen colour.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -106,7 +148,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TestProjectSampurna.RectangleCommandTest",
-      "Summary": "<p sourcefile=\"api/TestProjectSampurna.RectangleCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.rectangleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nVerifies rectangle drawing, fill handling, error validation, and parameter parsing.</p>\n"
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.RectangleCommandTest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.RectangleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests verify correct parameter parsing, validation,\nand execution behaviour when drawing rectangles on the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -134,7 +176,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TestProjectSampurna.TriangleCommandTest",
-      "Summary": "<p sourcefile=\"api/TestProjectSampurna.TriangleCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"WinFormsApp1.TriangleCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nEnsures correct validation, compilation and execution behaviour.</p>\n"
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestProjectSampurna.VariableTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestProjectSampurna.VariableTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TestProjectSampurna.VariableTest",
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.VariableTest.yml\" sourcestartlinenumber=\"1\">Minimal variable facility tests required for:\nInt, Real, Boolean, Array, Poke, Peek.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +204,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TestProjectSampurna.WriteCommandTest",
-      "Summary": "<p sourcefile=\"api/TestProjectSampurna.WriteCommandTest.yml\" sourcestartlinenumber=\"1\">Unit tests for the WinFormsApp1.WriteCommand class.\nEnsures messages are parsed, validated, cleaned, and executed correctly.</p>\n"
+      "Summary": "<p sourcefile=\"api/TestProjectSampurna.WriteCommandTest.yml\" sourcestartlinenumber=\"1\">Contains unit tests for the <xref href=\"WinFormsApp1.WriteCommand\" data-throw-if-not-resolved=\"false\"></xref> class.\nThese tests verify correct parameter validation and execution\nbehaviour when writing text to the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -190,7 +246,63 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.AppCommandFactory",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Factory class responsible for creating application-specific BOOSE commands.\nExtends the <xref href=\"BOOSE.CommandFactory\" data-throw-if-not-resolved=\"false\"></xref> to support custom drawing commands.</p>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Application-specific command factory responsible for creating\nBOOSE command instances based on parsed command names.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.ArrayCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.ArrayCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.ArrayCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.ArrayCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>array</code> command, allowing declaration and\nmanagement of integer or real arrays within a BOOSE program.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.AssignCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.AssignCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.AssignCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.AssignCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>assign</code> command, which assigns the result of an\nexpression to an existing variable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.BooleanCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.BooleanCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.BooleanCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.BooleanCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>boolean</code> command, which declares and manages\nboolean variables within a BOOSE program.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.CallCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.CallCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.CallCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.CallCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>call</code> command, which invokes a user-defined\nmethod and passes arguments to it.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +330,119 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.DrawToCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.DrawToCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>drawto</code> command.\nDraws a line from the current canvas position to a new (x, y) coordinate.</p>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.DrawToCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>drawto</code> command, which draws a line from the\ncurrent canvas position to a specified coordinate.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.ElseCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.ElseCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.ElseCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.ElseCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>else</code> command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.EndForCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.EndForCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.EndForCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.EndForCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>endfor</code> command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.EndIfCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.EndIfCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.EndIfCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.EndIfCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>endif</code> command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.EndMethodCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.EndMethodCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.EndMethodCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.EndMethodCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>endmethod</code> command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.EndWhileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.EndWhileCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.EndWhileCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.EndWhileCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>endwhile</code> command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.ExtendedParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.ExtendedParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.ExtendedParser",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.ExtendedParser.yml\" sourcestartlinenumber=\"1\">Extends the BOOSE <xref href=\"BOOSE.Parser\" data-throw-if-not-resolved=\"false\"></xref> to support additional syntax features,\nimproved error aggregation, and integration with <xref href=\"WinFormsApp1.ExtendedStoredProgram\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.ExtendedStoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.ExtendedStoredProgram.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.ExtendedStoredProgram",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.ExtendedStoredProgram.yml\" sourcestartlinenumber=\"1\">Extends <xref href=\"BOOSE.StoredProgram\" data-throw-if-not-resolved=\"false\"></xref> to provide full runtime support\nfor methods, variables, call stacks, and execution control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.ForCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.ForCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.ForCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.ForCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>for</code> loop command.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -232,7 +456,49 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.Form1",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.Form1.yml\" sourcestartlinenumber=\"1\">Main form of the BOOSE drawing application.\nHandles execution of commands, program parsing, debugging output,\nfile operations, and drawing through the ICanvas implementation.</p>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.Form1.yml\" sourcestartlinenumber=\"1\">Main UI form for the BOOSE drawing interpreter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.IfCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.IfCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.IfCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.IfCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>if</code> command for conditional execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.IntCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.IntCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.IntCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.IntCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>int</code> command for declaring and managing\ninteger variables.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.MethodCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.MethodCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.MethodCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.MethodCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>method</code> command for defining user methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -246,7 +512,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.MoveToCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.MoveToCommand.yml\" sourcestartlinenumber=\"1\">Represents the BOOSE <code>moveto</code> command.\nMoves the canvas cursor to a specified (x, y) position without drawing.</p>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.MoveToCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>moveto</code> command, which moves the current\ncanvas position without drawing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.PeekCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.PeekCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.PeekCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.PeekCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>peek</code> command, which retrieves a value from an array\nand assigns it to an existing variable.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -260,7 +540,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.PenCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.PenCommand.yml\" sourcestartlinenumber=\"1\">Represents a command that changes the pen colour on the canvas.</p>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.PenCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>pen</code> command, which sets the current drawing colour.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.PokeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.PokeCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.PokeCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.PokeCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>poke</code> command, which assigns a value to an array element.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.RealCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.RealCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.RealCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.RealCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>real</code> command for declaring and managing\nfloating-point variables.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -274,7 +582,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.TriangleCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.TriangleCommand.yml\" sourcestartlinenumber=\"1\">Represents the BOOSE command &quot;triangle&quot;, used to draw a triangle on the canvas.\nSyntax: triangle &lt;width&gt; &lt;height&gt;</p>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.TriangleCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>tri</code> command, which draws a triangle on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WinFormsApp1.WhileCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WinFormsApp1.WhileCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WinFormsApp1.WhileCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.WhileCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>while</code> command for conditional looping.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -288,7 +610,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "WinFormsApp1.WriteCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.WriteCommand.yml\" sourcestartlinenumber=\"1\">Represents the <code>write</code> command in the BOOSE language.\nThis command displays text at the canvas's current pen position.\nSupports both quoted and unquoted messages.</p>\n<p>Examples:</p>\n<pre><code class=\"lang-csharp\">write \"Hello World\"\nwrite 'Test Message'\nwrite Hello</code></pre>\n"
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.WriteCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>write</code> command, which displays text on the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -315,8 +637,8 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "WinFormsApp1.circleCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.circleCommand.yml\" sourcestartlinenumber=\"1\">Represents the BOOSE command &quot;circle&quot;, used to draw a circle on the canvas.\nSupports: circle &lt;radius&gt; [true/false] for filled or outlined.</p>\n"
+      "Title": "WinFormsApp1.CircleCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.circleCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>circle</code> command, which draws a circle on the canvas\nusing the current pen settings.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -329,8 +651,8 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "WinFormsApp1.rectangleCommand",
-      "Summary": "<p sourcefile=\"api/WinFormsApp1.rectangleCommand.yml\" sourcestartlinenumber=\"1\">Implements the RECT command used to draw rectangles on the canvas.\nSupports optional fill parameter (true/false).</p>\n"
+      "Title": "WinFormsApp1.RectangleCommand",
+      "Summary": "<p sourcefile=\"api/WinFormsApp1.rectangleCommand.yml\" sourcestartlinenumber=\"1\">Implements the BOOSE <code>rect</code> command, which draws a rectangle on the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",

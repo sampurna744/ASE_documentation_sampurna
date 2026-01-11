@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class rectangleCommand | BOOSE Documentation </title>
+      <title>Class RectangleCommand | BOOSE Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class rectangleCommand | BOOSE Documentation ">
+      <meta name="title" content="Class RectangleCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Implements the RECT command used to draw rectangles on the canvas. Supports optional fill parameter (true/false).">
+      <meta name="description" content="Implements the BOOSE rect command, which draws a rectangle on the canvas.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/new/main/apiSpec/new?filename=WinFormsApp1_rectangleCommand.md&amp;value=---%0Auid%3A%20WinFormsApp1.rectangleCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/new/main/apiSpec/new?filename=WinFormsApp1_RectangleCommand.md&amp;value=---%0Auid%3A%20WinFormsApp1.RectangleCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="WinFormsApp1.rectangleCommand">
+        <article data-uid="WinFormsApp1.RectangleCommand">
 
 
 
-  <h1 id="WinFormsApp1_rectangleCommand" data-uid="WinFormsApp1.rectangleCommand" class="text-break">
-Class rectangleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="WinFormsApp1_RectangleCommand" data-uid="WinFormsApp1.RectangleCommand" class="text-break">
+Class RectangleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,12 @@ Class rectangleCommand  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Implements the RECT command used to draw rectangles on the canvas.
-Supports optional fill parameter (true/false).</p>
+  <div class="markdown summary"><p>Implements the BOOSE <code>rect</code> command, which draws a rectangle on the canvas.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class rectangleCommand : CommandTwoParameters, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class RectangleCommand : Command, ICommand</code></pre>
   </div>
 
 
@@ -114,10 +113,7 @@ Supports optional fill parameter (true/false).</p>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">CommandTwoParameters</span></div>
-      <div><span class="xref">rectangleCommand</span></div>
+      <div><span class="xref">RectangleCommand</span></div>
     </dd>
   </dl>
 
@@ -132,30 +128,6 @@ Supports optional fill parameter (true/false).</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandTwoParameters.param2</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -221,25 +193,25 @@ Supports optional fill parameter (true/false).</p>
 </h2>
 
 
-  <a id="WinFormsApp1_rectangleCommand__ctor_" data-uid="WinFormsApp1.rectangleCommand.#ctor*"></a>
+  <a id="WinFormsApp1_RectangleCommand__ctor_" data-uid="WinFormsApp1.RectangleCommand.#ctor*"></a>
 
-  <h3 id="WinFormsApp1_rectangleCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.rectangleCommand.#ctor(BOOSE.ICanvas)">
-  rectangleCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <h3 id="WinFormsApp1_RectangleCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.RectangleCommand.#ctor(BOOSE.ICanvas)">
+  RectangleCommand(ICanvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new rectangleCommand instance.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.rectangleCommand.html">RectangleCommand</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public rectangleCommand(ICanvas canvas)</code></pre>
+    <pre><code class="lang-csharp hljs">public RectangleCommand(ICanvas canvas)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The drawing canvas.</p>
+    <dd><p>The canvas used for drawing.</p>
 </dd>
   </dl>
 
@@ -258,26 +230,25 @@ Supports optional fill parameter (true/false).</p>
 </h2>
 
 
-  <a id="WinFormsApp1_rectangleCommand_CheckParameters_" data-uid="WinFormsApp1.rectangleCommand.CheckParameters*"></a>
+  <a id="WinFormsApp1_RectangleCommand_CheckParameters_" data-uid="WinFormsApp1.RectangleCommand.CheckParameters*"></a>
 
-  <h3 id="WinFormsApp1_rectangleCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.rectangleCommand.CheckParameters(System.String[])">
+  <h3 id="WinFormsApp1_RectangleCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.RectangleCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates the number of parameters passed to the RECT command.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] p)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Parameter array.</p>
-</dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
   </dl>
 
 
@@ -288,23 +259,17 @@ Supports optional fill parameter (true/false).</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if parameter count is not 2 or 3.</p>
-</dd>
-  </dl>
 
 
 
-  <a id="WinFormsApp1_rectangleCommand_Compile_" data-uid="WinFormsApp1.rectangleCommand.Compile*"></a>
+  <a id="WinFormsApp1_RectangleCommand_Compile_" data-uid="WinFormsApp1.RectangleCommand.Compile*"></a>
 
-  <h3 id="WinFormsApp1_rectangleCommand_Compile" data-uid="WinFormsApp1.rectangleCommand.Compile">
+  <h3 id="WinFormsApp1_RectangleCommand_Compile" data-uid="WinFormsApp1.RectangleCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Converts parameters into numerical values and evaluates optional fill flag.</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -321,23 +286,17 @@ Supports optional fill parameter (true/false).</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if width, height, or fill option is invalid.</p>
-</dd>
-  </dl>
 
 
 
-  <a id="WinFormsApp1_rectangleCommand_Execute_" data-uid="WinFormsApp1.rectangleCommand.Execute*"></a>
+  <a id="WinFormsApp1_RectangleCommand_Execute_" data-uid="WinFormsApp1.RectangleCommand.Execute*"></a>
 
-  <h3 id="WinFormsApp1_rectangleCommand_Execute" data-uid="WinFormsApp1.rectangleCommand.Execute">
+  <h3 id="WinFormsApp1_RectangleCommand_Execute" data-uid="WinFormsApp1.RectangleCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the RECT command and draws a rectangle on the canvas.</p>
+  <div class="markdown level1 summary"><p>Executes the rectangle command by drawing a rectangle on the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -357,45 +316,40 @@ Supports optional fill parameter (true/false).</p>
 
 
 
-  <a id="WinFormsApp1_rectangleCommand_Set_" data-uid="WinFormsApp1.rectangleCommand.Set*"></a>
+  <a id="WinFormsApp1_RectangleCommand_Set_" data-uid="WinFormsApp1.RectangleCommand.Set*"></a>
 
-  <h3 id="WinFormsApp1_rectangleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.rectangleCommand.Set(BOOSE.StoredProgram,System.String)">
+  <h3 id="WinFormsApp1_RectangleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.RectangleCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the command parameters from program input.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the rectangle drawing command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>Stored program instance.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current program instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Raw parameter string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if invalid number of parameters.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter string containing the width, height,
+and optional fill flag.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -403,7 +357,7 @@ Supports optional fill parameter (true/false).</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/rectangleCommand.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

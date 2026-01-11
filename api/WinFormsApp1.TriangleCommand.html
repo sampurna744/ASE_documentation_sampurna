@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TriangleCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Represents the BOOSE command &amp;quot;triangle&amp;quot;, used to draw a triangle on the canvas. Syntax: triangle &amp;lt;width&amp;gt; &amp;lt;height&amp;gt;">
+      <meta name="description" content="Implements the BOOSE tri command, which draws a triangle on the canvas.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="WinFormsApp1_TriangleCommand" data-uid="WinFormsApp1.TriangleCommand" class="text-break">
-Class TriangleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class TriangleCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,12 @@ Class TriangleCommand  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents the BOOSE command &quot;triangle&quot;, used to draw a triangle on the canvas.
-Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
+  <div class="markdown summary"><p>Implements the BOOSE <code>tri</code> command, which draws a triangle on the canvas.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TriangleCommand : CommandOneParameter, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class TriangleCommand : Command, ICommand</code></pre>
   </div>
 
 
@@ -114,8 +113,6 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
       <div><span class="xref">TriangleCommand</span></div>
     </dd>
   </dl>
@@ -131,24 +128,6 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -218,10 +197,10 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
 
   <h3 id="WinFormsApp1_TriangleCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.TriangleCommand.#ctor(BOOSE.ICanvas)">
   TriangleCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new instance of TriangleCommand.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.TriangleCommand.html">TriangleCommand</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -232,7 +211,7 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>Drawing canvas.</p>
+    <dd><p>The canvas used for drawing.</p>
 </dd>
   </dl>
 
@@ -258,17 +237,17 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures exactly 2 parameters are supplied.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] p)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -287,10 +266,10 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
 
   <h3 id="WinFormsApp1_TriangleCommand_Compile" data-uid="WinFormsApp1.TriangleCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Converts parameters into executable numeric values.</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -307,12 +286,6 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown for invalid numbers.</p>
-</dd>
-  </dl>
 
 
 
@@ -320,10 +293,10 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
 
   <h3 id="WinFormsApp1_TriangleCommand_Execute" data-uid="WinFormsApp1.TriangleCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the triangle command on the canvas.</p>
+  <div class="markdown level1 summary"><p>Executes the triangle command by drawing a triangle on the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -347,41 +320,35 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
 
   <h3 id="WinFormsApp1_TriangleCommand_Set_BOOSE_StoredProgram_System_String_" data-uid="WinFormsApp1.TriangleCommand.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the program and parses the command parameters.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the triangle drawing command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>Stored program.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current program instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Raw parameter string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown for invalid syntax.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter string representing the triangle size.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -389,7 +356,7 @@ Syntax: triangle &lt;width&gt; &lt;height&gt;</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/TriangleCommand.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

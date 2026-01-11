@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PenCommand | BOOSE Documentation ">
       
-      <meta name="description" content="Represents a command that changes the pen colour on the canvas.">
+      <meta name="description" content="Implements the BOOSE pen command, which sets the current drawing colour.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="WinFormsApp1_PenCommand" data-uid="WinFormsApp1.PenCommand" class="text-break">
-Class PenCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class PenCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents a command that changes the pen colour on the canvas.</p>
+  <div class="markdown summary"><p>Implements the BOOSE <code>pen</code> command, which sets the current drawing colour.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PenCommand : CommandThreeParameters, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class PenCommand : Command, ICommand</code></pre>
   </div>
 
 
@@ -113,10 +113,6 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">CommandTwoParameters</span></div>
-      <div><span class="xref">CommandThreeParameters</span></div>
       <div><span class="xref">PenCommand</span></div>
     </dd>
   </dl>
@@ -132,36 +128,6 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandThreeParameters.param3</span>
-    </div>
-    <div>
-      <span class="xref">CommandThreeParameters.param3unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -221,11 +187,6 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
 
 
-  <h2 id="WinFormsApp1_PenCommand_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Command syntax:</p>
-<pre><code class="lang-csharp">pen &lt;r&gt; &lt;g&gt; &lt;b&gt;</code></pre>
-<p>Each value must be between 0 and 255.</p>
-</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -236,10 +197,10 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="WinFormsApp1_PenCommand__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.PenCommand.#ctor(BOOSE.ICanvas)">
   PenCommand(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a> instance using the provided canvas.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.PenCommand.html">PenCommand</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -250,7 +211,7 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>Canvas where colour will be applied.</p>
+    <dd><p>The canvas used for drawing.</p>
 </dd>
   </dl>
 
@@ -273,10 +234,10 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="WinFormsApp1_PenCommand_CheckParameters_System_String___" data-uid="WinFormsApp1.PenCommand.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates the number of parameters passed to the command.</p>
+  <div class="markdown level1 summary"><p>Validates command parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -287,8 +248,7 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Parameter array.</p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -299,12 +259,6 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when parameter count is not exactly 3.</p>
-</dd>
-  </dl>
 
 
 
@@ -312,10 +266,10 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="WinFormsApp1_PenCommand_Compile" data-uid="WinFormsApp1.PenCommand.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compiles and converts parameter strings into usable integer RGB values.</p>
+  <div class="markdown level1 summary"><p>Performs compile-time validation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -332,12 +286,6 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when values are non-numeric or outside the valid range (0–255).</p>
-</dd>
-  </dl>
 
 
 
@@ -345,10 +293,10 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="WinFormsApp1_PenCommand_Execute" data-uid="WinFormsApp1.PenCommand.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the pen colour change on the associated canvas.</p>
+  <div class="markdown level1 summary"><p>Executes the pen command by setting the canvas drawing colour.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -375,38 +323,32 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
   <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets and parses the raw parameter string for this command.</p>
+  <div class="markdown level1 summary"><p>Parses and initializes the pen command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string param)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>The stored program reference.</p>
+    <dt><code>program</code> <span class="xref">StoredProgram</span></dt>
+    <dd><p>The current program instance.</p>
 </dd>
-    <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Parameter string containing RGB values.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if parameters are missing or invalid.</p>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter string containing the RGB colour expressions.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -414,7 +356,7 @@ Class PenCommand  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/PenCommand.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

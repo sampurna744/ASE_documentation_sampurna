@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExtendedStoredProgram | BOOSE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExtendedStoredProgram | BOOSE Documentation ">
+      
+      <meta name="description" content="Extends  to provide full runtime support for methods, variables, call stacks, and execution control.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/new/main/apiSpec/new?filename=WinFormsApp1_ExtendedStoredProgram.md&amp;value=---%0Auid%3A%20WinFormsApp1.ExtendedStoredProgram%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE Documentation">
+            BOOSE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="WinFormsApp1.ExtendedStoredProgram">
+
+
+
+  <h1 id="WinFormsApp1_ExtendedStoredProgram" data-uid="WinFormsApp1.ExtendedStoredProgram" class="text-break">
+Class ExtendedStoredProgram  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="WinFormsApp1.html">WinFormsApp1</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WinFormsApp1.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Extends <span class="xref">BOOSE.StoredProgram</span> to provide full runtime support
+for methods, variables, call stacks, and execution control.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExtendedStoredProgram : StoredProgram, IList, ICollection, IEnumerable, ICloneable, IStoredProgram</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></div>
+      <div><span class="xref">StoredProgram</span></div>
+      <div><span class="xref">ExtendedStoredProgram</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><span class="xref">IStoredProgram</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">StoredProgram.IsValidProgram()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">StoredProgram.SetSyntaxStatus(bool)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.AddMethod(Method)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.GetMethod(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">StoredProgram.GetVariable(int)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.FindVariable(Evaluation)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.FindVariable(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.GetVarValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.UpdateVariable(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.UpdateVariable(string, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.UpdateVariable(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.DeleteVariable(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.IsExpression(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.EvaluateExpressionWithString(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.EvaluateExpression(string)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Push(ConditionalCommand)</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Pop()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Add(Command)</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.NextCommand()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.ResetProgram()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Commandsleft()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter">ArrayList.Adapter(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add">ArrayList.Add(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">ArrayList.AddRange(ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)">ArrayList.BinarySearch(int, int, object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)">ArrayList.BinarySearch(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)">ArrayList.BinarySearch(object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone">ArrayList.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">ArrayList.Contains(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">ArrayList.CopyTo(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)">ArrayList.CopyTo(Array, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)">ArrayList.CopyTo(int, Array, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)">ArrayList.FixedSize(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)">ArrayList.FixedSize(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator">ArrayList.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)">ArrayList.GetEnumerator(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange">ArrayList.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">ArrayList.IndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)">ArrayList.IndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)">ArrayList.IndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert">ArrayList.Insert(int, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insertrange">ArrayList.InsertRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)">ArrayList.LastIndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)">ArrayList.LastIndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)">ArrayList.LastIndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)">ArrayList.ReadOnly(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)">ArrayList.ReadOnly(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">ArrayList.Remove(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat">ArrayList.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange">ArrayList.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat">ArrayList.Repeat(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">ArrayList.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)">ArrayList.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange">ArrayList.SetRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)">ArrayList.Sort(IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)">ArrayList.Sort(int, int, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)">ArrayList.Synchronized(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)">ArrayList.Synchronized(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray">ArrayList.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)">ArrayList.ToArray(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">ArrayList.TrimToSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">ArrayList.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">ArrayList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">ArrayList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">ArrayList.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ArrayList.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">ArrayList.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram__ctor_" data-uid="WinFormsApp1.ExtendedStoredProgram.#ctor*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram__ctor_BOOSE_ICanvas_" data-uid="WinFormsApp1.ExtendedStoredProgram.#ctor(BOOSE.ICanvas)">
+  ExtendedStoredProgram(ICanvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WinFormsApp1.ExtendedStoredProgram.html">ExtendedStoredProgram</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExtendedStoredProgram(ICanvas canvas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
+    <dd><p>The canvas used for drawing commands.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_Count_" data-uid="WinFormsApp1.ExtendedStoredProgram.Count*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_Count" data-uid="WinFormsApp1.ExtendedStoredProgram.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total number of commands in the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_PC_" data-uid="WinFormsApp1.ExtendedStoredProgram.PC*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_PC" data-uid="WinFormsApp1.ExtendedStoredProgram.PC">
+  PC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current program counter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_Add_" data-uid="WinFormsApp1.ExtendedStoredProgram.Add*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_Add_BOOSE_ICommand_" data-uid="WinFormsApp1.ExtendedStoredProgram.Add(BOOSE.ICommand)">
+  Add(ICommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a command to the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(ICommand cmd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cmd</code> <span class="xref">ICommand</span></dt>
+    <dd><p>The command to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_AddVariable_" data-uid="WinFormsApp1.ExtendedStoredProgram.AddVariable*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_AddVariable_BOOSE_Evaluation_" data-uid="WinFormsApp1.ExtendedStoredProgram.AddVariable(BOOSE.Evaluation)">
+  AddVariable(Evaluation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a variable to the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddVariable(Evaluation v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">Evaluation</span></dt>
+    <dd><p>The variable to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_Clear_" data-uid="WinFormsApp1.ExtendedStoredProgram.Clear*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_Clear" data-uid="WinFormsApp1.ExtendedStoredProgram.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all runtime state including commands, variables, and stacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_GetCommandAt_" data-uid="WinFormsApp1.ExtendedStoredProgram.GetCommandAt*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_GetCommandAt_System_Int32_" data-uid="WinFormsApp1.ExtendedStoredProgram.GetCommandAt(System.Int32)">
+  GetCommandAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the command at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand GetCommandAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The command index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ICommand</span></dt>
+    <dd><p>The command at the given index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_GetMethodStartIndex_" data-uid="WinFormsApp1.ExtendedStoredProgram.GetMethodStartIndex*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_GetMethodStartIndex_System_String_" data-uid="WinFormsApp1.ExtendedStoredProgram.GetMethodStartIndex(System.String)">
+  GetMethodStartIndex(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the starting command index for a method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMethodStartIndex(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The method name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The command index where the method begins.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_GetVariable_" data-uid="WinFormsApp1.ExtendedStoredProgram.GetVariable*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_GetVariable_System_String_" data-uid="WinFormsApp1.ExtendedStoredProgram.GetVariable(System.String)">
+  GetVariable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a variable by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Evaluation GetVariable(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The variable name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Evaluation</span></dt>
+    <dd><p>The variable instance, or <code>null</code> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_Jump_" data-uid="WinFormsApp1.ExtendedStoredProgram.Jump*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_Jump_System_Int32_" data-uid="WinFormsApp1.ExtendedStoredProgram.Jump(System.Int32)">
+  Jump(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the program counter to a new position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump(int target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The target command index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_MethodExists_" data-uid="WinFormsApp1.ExtendedStoredProgram.MethodExists*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_MethodExists_System_String_" data-uid="WinFormsApp1.ExtendedStoredProgram.MethodExists(System.String)">
+  MethodExists(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a method with the given name exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MethodExists(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The method name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the method exists; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_PopCompile_" data-uid="WinFormsApp1.ExtendedStoredProgram.PopCompile*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_PopCompile" data-uid="WinFormsApp1.ExtendedStoredProgram.PopCompile">
+  PopCompile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pops the most recent object from the compile-time stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PopCompile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The popped object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_PopReturn_" data-uid="WinFormsApp1.ExtendedStoredProgram.PopReturn*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_PopReturn" data-uid="WinFormsApp1.ExtendedStoredProgram.PopReturn">
+  PopReturn()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pops the most recent return address from the call stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PopReturn()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The return address.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_PushCompile_" data-uid="WinFormsApp1.ExtendedStoredProgram.PushCompile*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_PushCompile_System_Object_" data-uid="WinFormsApp1.ExtendedStoredProgram.PushCompile(System.Object)">
+  PushCompile(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pushes an object onto the compile-time stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushCompile(object o)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to push.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_PushReturn_" data-uid="WinFormsApp1.ExtendedStoredProgram.PushReturn*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_PushReturn_System_Int32_" data-uid="WinFormsApp1.ExtendedStoredProgram.PushReturn(System.Int32)">
+  PushReturn(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pushes a return address onto the call stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushReturn(int address)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The address to return to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_RegisterMethod_" data-uid="WinFormsApp1.ExtendedStoredProgram.RegisterMethod*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_RegisterMethod_System_String_System_Int32_" data-uid="WinFormsApp1.ExtendedStoredProgram.RegisterMethod(System.String,System.Int32)">
+  RegisterMethod(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a method name with its starting command index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMethod(string methodName, int startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The method name.</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index where the method begins.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_Run_" data-uid="WinFormsApp1.ExtendedStoredProgram.Run*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_Run" data-uid="WinFormsApp1.ExtendedStoredProgram.Run">
+  Run()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the program from the beginning until completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_SetOrCreateNumeric_" data-uid="WinFormsApp1.ExtendedStoredProgram.SetOrCreateNumeric*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_SetOrCreateNumeric_System_String_System_Double_System_String_" data-uid="WinFormsApp1.ExtendedStoredProgram.SetOrCreateNumeric(System.String,System.Double,System.String)">
+  SetOrCreateNumeric(string, double, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets or creates a numeric variable used during method calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOrCreateNumeric(string name, double value, string type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The variable name.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The numeric value.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The variable type (<code>int</code>, <code>real</code>, or <code>boolean</code>).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="WinFormsApp1_ExtendedStoredProgram_VariableExists_" data-uid="WinFormsApp1.ExtendedStoredProgram.VariableExists*"></a>
+
+  <h3 id="WinFormsApp1_ExtendedStoredProgram_VariableExists_System_String_" data-uid="WinFormsApp1.ExtendedStoredProgram.VariableExists(System.String)">
+  VariableExists(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a variable with the given name exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool VariableExists(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The variable name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the variable exists; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/WinFormsApp1/ExtendedStoredProgram.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MoveToCommandTest | BOOSE Documentation ">
       
-      <meta name="description" content="Unit tests for the  class. Verifies correct parameter parsing, error handling, and that the canvas cursor is moved to the correct coordinates.">
+      <meta name="description" content="Contains unit tests for the  class. These tests verify correct parameter parsing, validation, and execution behaviour when moving the canvas cursor.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,9 +97,9 @@ Class MoveToCommandTest  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Unit tests for the <a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a> class.
-Verifies correct parameter parsing, error handling,
-and that the canvas cursor is moved to the correct coordinates.</p>
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="WinFormsApp1.MoveToCommand.html">MoveToCommand</a> class.
+These tests verify correct parameter parsing, validation,
+and execution behaviour when moving the canvas cursor.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -156,22 +156,21 @@ public class MoveToCommandTest</code></pre>
 </h2>
 
 
-  <a id="TestProjectSampurna_MoveToCommandTest_CheckParameters_ShouldThrow_WhenIncorrectParameterCount_" data-uid="TestProjectSampurna.MoveToCommandTest.CheckParameters_ShouldThrow_WhenIncorrectParameterCount*"></a>
+  <a id="TestProjectSampurna_MoveToCommandTest_Execute_AllowsCommaSeparatedParams_" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_AllowsCommaSeparatedParams*"></a>
 
-  <h3 id="TestProjectSampurna_MoveToCommandTest_CheckParameters_ShouldThrow_WhenIncorrectParameterCount" data-uid="TestProjectSampurna.MoveToCommandTest.CheckParameters_ShouldThrow_WhenIncorrectParameterCount">
-  CheckParameters_ShouldThrow_WhenIncorrectParameterCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_MoveToCommandTest_Execute_AllowsCommaSeparatedParams" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_AllowsCommaSeparatedParams">
+  Execute_AllowsCommaSeparatedParams()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures <a class="xref" href="WinFormsApp1.MoveToCommand.html#WinFormsApp1_MoveToCommand_CheckParameters_System_String___">CheckParameters(string[])</a>
-throws a <span class="xref">BOOSE.CommandException</span> if parameter count is incorrect.</p>
+  <div class="markdown level1 summary"><p>Ensures that comma-separated coordinate parameters
+are accepted and correctly parsed by the command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void CheckParameters_ShouldThrow_WhenIncorrectParameterCount()</code></pre>
+public void Execute_AllowsCommaSeparatedParams()</code></pre>
   </div>
 
 
@@ -190,10 +189,11 @@ public void CheckParameters_ShouldThrow_WhenIncorrectParameterCount()</code></pr
 
   <h3 id="TestProjectSampurna_MoveToCommandTest_Execute_ShouldMoveCursor_WhenParametersValid" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_ShouldMoveCursor_WhenParametersValid">
   Execute_ShouldMoveCursor_WhenParametersValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures valid X and Y parameters correctly move the canvas cursor.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with valid parameters
+moves the canvas cursor to the expected coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -214,14 +214,78 @@ public void Execute_ShouldMoveCursor_WhenParametersValid()</code></pre>
 
 
 
+  <a id="TestProjectSampurna_MoveToCommandTest_Execute_ShouldThrow_WhenXParameterInvalid_" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_ShouldThrow_WhenXParameterInvalid*"></a>
+
+  <h3 id="TestProjectSampurna_MoveToCommandTest_Execute_ShouldThrow_WhenXParameterInvalid" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_ShouldThrow_WhenXParameterInvalid">
+  Execute_ShouldThrow_WhenXParameterInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) X-coordinate expression throws a
+<span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_ShouldThrow_WhenXParameterInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_MoveToCommandTest_Execute_ShouldThrow_WhenYParameterInvalid_" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_ShouldThrow_WhenYParameterInvalid*"></a>
+
+  <h3 id="TestProjectSampurna_MoveToCommandTest_Execute_ShouldThrow_WhenYParameterInvalid" data-uid="TestProjectSampurna.MoveToCommandTest.Execute_ShouldThrow_WhenYParameterInvalid">
+  Execute_ShouldThrow_WhenYParameterInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) Y-coordinate expression throws a
+<span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Execute_ShouldThrow_WhenYParameterInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TestProjectSampurna_MoveToCommandTest_Set_ShouldThrow_WhenMissingParameters_" data-uid="TestProjectSampurna.MoveToCommandTest.Set_ShouldThrow_WhenMissingParameters*"></a>
 
   <h3 id="TestProjectSampurna_MoveToCommandTest_Set_ShouldThrow_WhenMissingParameters" data-uid="TestProjectSampurna.MoveToCommandTest.Set_ShouldThrow_WhenMissingParameters">
   Set_ShouldThrow_WhenMissingParameters()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures that missing parameters throw a <span class="xref">BOOSE.CommandException</span>.</p>
+  <div class="markdown level1 summary"><p>Ensures that providing fewer than the required number
+of parameters to <a class="xref" href="WinFormsApp1.MoveToCommand.html#WinFormsApp1_MoveToCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> throws
+a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -243,66 +307,6 @@ public void Set_ShouldThrow_WhenMissingParameters()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_MoveToCommandTest_Set_ShouldThrow_WhenXParameterInvalid_" data-uid="TestProjectSampurna.MoveToCommandTest.Set_ShouldThrow_WhenXParameterInvalid*"></a>
-
-  <h3 id="TestProjectSampurna_MoveToCommandTest_Set_ShouldThrow_WhenXParameterInvalid" data-uid="TestProjectSampurna.MoveToCommandTest.Set_ShouldThrow_WhenXParameterInvalid">
-  Set_ShouldThrow_WhenXParameterInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L70"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command throws a <span class="xref">BOOSE.CommandException</span>
-when the X-coordinate cannot be parsed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenXParameterInvalid()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_MoveToCommandTest_Set_ShouldThrow_WhenYParameterInvalid_" data-uid="TestProjectSampurna.MoveToCommandTest.Set_ShouldThrow_WhenYParameterInvalid*"></a>
-
-  <h3 id="TestProjectSampurna_MoveToCommandTest_Set_ShouldThrow_WhenYParameterInvalid" data-uid="TestProjectSampurna.MoveToCommandTest.Set_ShouldThrow_WhenYParameterInvalid">
-  Set_ShouldThrow_WhenYParameterInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L81"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Ensures the command throws a <span class="xref">BOOSE.CommandException</span>
-when the Y-coordinate cannot be parsed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void Set_ShouldThrow_WhenYParameterInvalid()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="TestProjectSampurna_MoveToCommandTest_Setup_" data-uid="TestProjectSampurna.MoveToCommandTest.Setup*"></a>
 
   <h3 id="TestProjectSampurna_MoveToCommandTest_Setup" data-uid="TestProjectSampurna.MoveToCommandTest.Setup">
@@ -310,8 +314,8 @@ public void Set_ShouldThrow_WhenYParameterInvalid()</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/MoveToCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes the mock canvas, stored program,
-and MoveTo command before each unit test.</p>
+  <div class="markdown level1 summary"><p>Creates a fresh mock canvas, stored program,
+and move-to command instance before each test runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

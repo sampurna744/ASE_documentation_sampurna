@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class DrawToCommandTest | BOOSE Documentation ">
       
-      <meta name="description" content="Unit tests for the WinFormsApp1.DrawToCommand class. Ensures parameters are parsed, validated, compiled, and executed correctly.">
+      <meta name="description" content="Contains unit tests for the  class. These tests verify correct parameter parsing, validation, and execution behaviour when drawing lines on the canvas.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="TestProjectSampurna_DrawToCommandTest" data-uid="TestProjectSampurna.DrawToCommandTest" class="text-break">
-Class DrawToCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class DrawToCommandTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class DrawToCommandTest  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>TestProjectSampurna.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Unit tests for the WinFormsApp1.DrawToCommand class.
-Ensures parameters are parsed, validated, compiled, and executed correctly.</p>
+  <div class="markdown summary"><p>Contains unit tests for the <a class="xref" href="WinFormsApp1.DrawToCommand.html">DrawToCommand</a> class.
+These tests verify correct parameter parsing, validation,
+and execution behaviour when drawing lines on the canvas.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -155,22 +156,21 @@ public class DrawToCommandTest</code></pre>
 </h2>
 
 
-  <a id="TestProjectSampurna_DrawToCommandTest_CheckParameters_InvalidCount_Throws_" data-uid="TestProjectSampurna.DrawToCommandTest.CheckParameters_InvalidCount_Throws*"></a>
+  <a id="TestProjectSampurna_DrawToCommandTest_Execute_AllowsCommaSeparatedParams_" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_AllowsCommaSeparatedParams*"></a>
 
-  <h3 id="TestProjectSampurna_DrawToCommandTest_CheckParameters_InvalidCount_Throws" data-uid="TestProjectSampurna.DrawToCommandTest.CheckParameters_InvalidCount_Throws">
-  CheckParameters_InvalidCount_Throws()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_DrawToCommandTest_Execute_AllowsCommaSeparatedParams" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_AllowsCommaSeparatedParams">
+  Execute_AllowsCommaSeparatedParams()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Verifies that providing too few or too many parameters
-throws a CommandException.</p>
+  <div class="markdown level1 summary"><p>Ensures that comma-separated coordinate parameters
+are accepted and correctly parsed by the command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
-[ExpectedException(typeof(CommandException))]
-public void CheckParameters_InvalidCount_Throws()</code></pre>
+public void Execute_AllowsCommaSeparatedParams()</code></pre>
   </div>
 
 
@@ -185,21 +185,22 @@ public void CheckParameters_InvalidCount_Throws()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_DrawToCommandTest_Compile_InvalidX_Throws_" data-uid="TestProjectSampurna.DrawToCommandTest.Compile_InvalidX_Throws*"></a>
+  <a id="TestProjectSampurna_DrawToCommandTest_Execute_InvalidXExpression_Throws_" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_InvalidXExpression_Throws*"></a>
 
-  <h3 id="TestProjectSampurna_DrawToCommandTest_Compile_InvalidX_Throws" data-uid="TestProjectSampurna.DrawToCommandTest.Compile_InvalidX_Throws">
-  Compile_InvalidX_Throws()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_DrawToCommandTest_Execute_InvalidXExpression_Throws" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_InvalidXExpression_Throws">
+  Execute_InvalidXExpression_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures Compile() fails when a non-integer X value is provided.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) X-coordinate expression throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Compile_InvalidX_Throws()</code></pre>
+public void Execute_InvalidXExpression_Throws()</code></pre>
   </div>
 
 
@@ -214,49 +215,22 @@ public void Compile_InvalidX_Throws()</code></pre>
 
 
 
-  <a id="TestProjectSampurna_DrawToCommandTest_Compile_InvalidY_Throws_" data-uid="TestProjectSampurna.DrawToCommandTest.Compile_InvalidY_Throws*"></a>
+  <a id="TestProjectSampurna_DrawToCommandTest_Execute_InvalidYExpression_Throws_" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_InvalidYExpression_Throws*"></a>
 
-  <h3 id="TestProjectSampurna_DrawToCommandTest_Compile_InvalidY_Throws" data-uid="TestProjectSampurna.DrawToCommandTest.Compile_InvalidY_Throws">
-  Compile_InvalidY_Throws()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TestProjectSampurna_DrawToCommandTest_Execute_InvalidYExpression_Throws" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_InvalidYExpression_Throws">
+  Execute_InvalidYExpression_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures Compile() fails when a non-integer Y value is provided.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with an invalid
+(non-numeric) Y-coordinate expression throws a <span class="xref">BOOSE.CommandException</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestMethod]
 [ExpectedException(typeof(CommandException))]
-public void Compile_InvalidY_Throws()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TestProjectSampurna_DrawToCommandTest_Compile_ValidParameters_Success_" data-uid="TestProjectSampurna.DrawToCommandTest.Compile_ValidParameters_Success*"></a>
-
-  <h3 id="TestProjectSampurna_DrawToCommandTest_Compile_ValidParameters_Success" data-uid="TestProjectSampurna.DrawToCommandTest.Compile_ValidParameters_Success">
-  Compile_ValidParameters_Success()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L31"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Confirms that valid parameters (&quot;100 200&quot;) compile successfully.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestMethod]
-public void Compile_ValidParameters_Success()</code></pre>
+public void Execute_InvalidYExpression_Throws()</code></pre>
   </div>
 
 
@@ -275,11 +249,12 @@ public void Compile_ValidParameters_Success()</code></pre>
 
   <h3 id="TestProjectSampurna_DrawToCommandTest_Execute_ValidParameters_CallsDrawTo" data-uid="TestProjectSampurna.DrawToCommandTest.Execute_ValidParameters_CallsDrawTo">
   Execute_ValidParameters_CallsDrawTo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Ensures that executing the command causes canvas.DrawTo()
-to be called exactly once with the expected coordinates.</p>
+  <div class="markdown level1 summary"><p>Ensures that executing the command with valid parameters
+results in exactly one call to <code>DrawTo</code> on the canvas
+with the expected coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -300,14 +275,74 @@ public void Execute_ValidParameters_CallsDrawTo()</code></pre>
 
 
 
+  <a id="TestProjectSampurna_DrawToCommandTest_Set_InvalidCount_Throws_" data-uid="TestProjectSampurna.DrawToCommandTest.Set_InvalidCount_Throws*"></a>
+
+  <h3 id="TestProjectSampurna_DrawToCommandTest_Set_InvalidCount_Throws" data-uid="TestProjectSampurna.DrawToCommandTest.Set_InvalidCount_Throws">
+  Set_InvalidCount_Throws()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that providing an incorrect number of parameters
+to <a class="xref" href="WinFormsApp1.DrawToCommand.html#WinFormsApp1_DrawToCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> throws a <span class="xref">BOOSE.CommandException</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CommandException))]
+public void Set_InvalidCount_Throws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TestProjectSampurna_DrawToCommandTest_Set_ValidParameters_DoesNotDraw_" data-uid="TestProjectSampurna.DrawToCommandTest.Set_ValidParameters_DoesNotDraw*"></a>
+
+  <h3 id="TestProjectSampurna_DrawToCommandTest_Set_ValidParameters_DoesNotDraw" data-uid="TestProjectSampurna.DrawToCommandTest.Set_ValidParameters_DoesNotDraw">
+  Set_ValidParameters_DoesNotDraw()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures that calling <a class="xref" href="WinFormsApp1.DrawToCommand.html#WinFormsApp1_DrawToCommand_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a> with valid parameters
+succeeds and does not immediately draw a line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_ValidParameters_DoesNotDraw()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TestProjectSampurna_DrawToCommandTest_Setup_" data-uid="TestProjectSampurna.DrawToCommandTest.Setup*"></a>
 
   <h3 id="TestProjectSampurna_DrawToCommandTest_Setup" data-uid="TestProjectSampurna.DrawToCommandTest.Setup">
   Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a fresh canvas and command before each test.</p>
+  <div class="markdown level1 summary"><p>Creates a fresh mock canvas, stored program,
+and draw-to command instance before each test runs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -332,7 +367,7 @@ public void Setup()</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-sampurna744/blob/main/WinFormsApp1/TestProjectSampurna/DrawToCommandTest.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 
